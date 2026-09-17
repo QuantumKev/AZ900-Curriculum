@@ -1,0 +1,100 @@
+// Domain 1 Checkpoint — Describe Cloud Concepts
+// Generated from quizzes/checkpoint-domain-1.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 1.1.1
+::checkpoint-domain-1-Q1:: Which statement best captures what makes something cloud computing rather than traditional IT? {
+    ~The workload runs on virtualized hardware
+    =Computing services are delivered over the internet and rented rather than owned
+    ~The hardware is newer than five years old
+    ~The organization has more than one datacenter
+}
+
+// objectives: 1.1.2
+::checkpoint-domain-1-Q2:: Which item is always the customer's responsibility, in every cloud service type? {
+    ~The physical hosts
+    ~The operating system
+    =The accounts and identities in the environment
+    ~The physical network
+}
+
+// objectives: 1.1.2
+::checkpoint-domain-1-Q3:: Which statement correctly describes how responsibility shifts across service types? {
+    ~IaaS places the most responsibility on the provider, and SaaS the most on the customer
+    =IaaS places the most responsibility on the customer, SaaS the most on the provider, and PaaS sits between them
+    ~Responsibility is identical in all three; only pricing differs
+    ~The customer is responsible for physical security in IaaS
+}
+
+// objectives: 1.1.3, 1.1.4
+::checkpoint-domain-1-Q4:: (Match each scenario to the cloud model that fits best\: public, private, hybrid, or multicloud.) {
+    =A single organization runs a dedicated cloud environment in its own datacenter -> private
+    =A company keeps regulated data on dedicated infrastructure and runs its public website with a cloud provider, connecting the two -> hybrid
+    =A startup with no hardware buys all of its infrastructure from a cloud provider -> public
+    =An enterprise runs production workloads with two different public cloud providers and manages security in both -> multicloud
+}
+
+// objectives: 1.1.5
+::checkpoint-domain-1-Q5:: Which outcome is the clearest consequence of the consumption-based model? {
+    ~You purchase capacity in advance to guarantee availability
+    =You pay only for resources you use, and you can release them when demand drops
+    ~Infrastructure costs become capital expenditure
+    ~Costs are fixed and independent of usage
+}
+
+// objectives: 1.1.6
+::checkpoint-domain-1-Q6:: A team can commit to a three-year term on a specific virtual machine size for a steady workload. Which pricing option is intended for that situation? {
+    ~Pay-as-you-go
+    =A reservation
+    ~Azure Spot Virtual Machines
+    ~The Azure free account
+}
+
+// objectives: 1.1.7
+::checkpoint-domain-1-Q7:: Which description matches serverless computing? {
+    ~Code runs on a VM you size and patch yourself
+    =Code is triggered by an event, resources are allocated around the run and released afterward, and you pay for the time it executes
+    ~A dedicated physical host is reserved for your workload
+    ~A managed desktop is delivered to remote users
+}
+
+// objectives: 1.2.1
+::checkpoint-domain-1-Q8:: An application must keep serving users during a datacenter-level failure and must handle a fivefold traffic increase during a sale. Which two cloud benefits are being described? {
+    ~Governance and compliance
+    =High availability and scalability
+    ~Manageability and predictability
+    ~Security and reliability
+}
+
+// objectives: 1.2.2
+::checkpoint-domain-1-Q9:: Which statement describes reliability as distinct from predictability? {
+    ~Reliability is forecasting cost; predictability is recovering from failure
+    =Reliability is recovering from failure and continuing to function; predictability is being able to anticipate performance and cost
+    ~They are two names for the same property
+    ~Reliability applies only to storage; predictability only to compute
+}
+
+// objectives: 1.2.3
+::checkpoint-domain-1-Q10:: Which pair of capabilities are governance and security benefits of the cloud? {
+    =Deploying from templates to meet technical standards, and cloud-based auditing that flags noncompliant resources
+    ~Buying hardware in bulk, and negotiating vendor discounts
+    ~Writing application code, and running unit tests
+    ~Assigning licenses, and paying invoices
+}
+
+// objectives: 1.2.4
+::checkpoint-domain-1-Q11:: Which set of activities describes management in the cloud? {
+    ~Autoscaling resources and automatically replacing failing resources
+    ~Deploying from preconfigured templates and receiving metric-based alerts
+    =Using a web portal, a command line interface, APIs, or PowerShell to manage the environment
+    ~Monitoring resource health and configuring automatic alerts
+}
+
+// objectives: 1.3.1, 1.3.2, 1.3.3, 1.3.4
+::checkpoint-domain-1-Q12:: (Match each requirement to the cloud service type that fits best\: IaaS, PaaS, or SaaS.) {
+    =Full control of the operating system for a lift-and-shift migration -> IaaS
+    =A ready-to-use email and messaging product with no development work -> SaaS
+    =A managed development framework with built-in scalability and multitenancy so developers write less infrastructure code -> PaaS
+    =Rapidly created and destroyed test environments replicating an established server configuration -> IaaS
+    =Business intelligence tooling delivered as a service for a team to analyze its own data -> PaaS
+}

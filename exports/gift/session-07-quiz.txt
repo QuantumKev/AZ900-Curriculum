@@ -1,0 +1,83 @@
+// Session 7 Quiz — Azure Identity, Access, and Security
+// Generated from quizzes/session-07-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 2.4.1
+::S07-Q1:: An organization has applications that require traditional domain features — domain join, group policy, LDAP, and Kerberos or NTLM authentication — but does not want to deploy and maintain domain controllers in Azure. Which service fits? {
+    ~Microsoft Entra ID
+    =Microsoft Entra Domain Services
+    ~Microsoft Entra Connect
+    ~Microsoft Defender for Cloud
+}
+
+// objectives: 2.4.2
+::S07-Q2:: Which three passwordless authentication options does Microsoft Entra ID support? {
+    ~SMS codes, security questions, and email links
+    =Windows Hello for Business, the Microsoft Authenticator app, and FIDO2 security keys
+    ~Smart cards, RADIUS tokens, and one-time passwords
+    ~Password managers, biometrics, and CAPTCHA
+}
+
+// objectives: 2.4.3
+::S07-Q3:: A supplier's staff need access to one internal application using their own work identities, and they should appear in your directory as guests. Which capability is this? {
+    =B2B collaboration
+    ~B2B direct connect
+    ~Microsoft Entra External ID for customers
+    ~Microsoft Entra Domain Services
+}
+
+// objectives: 2.4.4
+::S07-Q4:: During sign-in, Conditional Access performs which sequence? {
+    ~Encrypt, transmit, decrypt
+    =Collect signals, make a decision, enforce the decision
+    ~Authenticate, authorize, audit
+    ~Assess, secure, defend
+}
+
+// objectives: 2.4.5
+::S07-Q5:: You assign the Reader role to a group at subscription scope. What can members of that group do? {
+    =Read every resource group and resource in that subscription
+    ~Read only the resources created after the assignment
+    ~Read and modify resources in the subscription
+    ~Nothing until the role is also assigned at each resource group
+}
+
+// objectives: 2.4.5
+::S07-Q6:: Which statement about Azure RBAC is correct? {
+    ~RBAC uses a deny model, so the most restrictive assignment wins
+    =RBAC uses an allow model, so permissions from multiple assignments combine
+    ~RBAC enforces permissions inside applications and at the data level
+    ~RBAC assignments do not inherit to child scopes
+}
+
+// objectives: 2.4.6
+::S07-Q7:: Which three principles guide the Zero Trust model? {
+    ~Trust but verify, defend the perimeter, encrypt everything
+    =Verify explicitly, use least privilege access, assume breach
+    ~Authenticate, authorize, account
+    ~Detect, respond, recover
+}
+
+// objectives: 2.4.7
+::S07-Q8:: In the defense-in-depth model, which layer uses DDoS protection to filter large-scale attacks before they cause a denial of service for users? {
+    ~The network layer
+    =The perimeter layer
+    ~The compute layer
+    ~The identity and access layer
+}
+
+// objectives: 2.4.8
+::S07-Q9:: A security team wants a single place to see a score representing their security posture, receive prioritized hardening recommendations aligned to a security benchmark, and get alerts on detected threats — covering Azure, on-premises servers, and workloads in AWS. Which service provides this? {
+    ~Azure Monitor
+    =Microsoft Defender for Cloud
+    ~Azure Policy
+    ~Microsoft Entra Conditional Access
+}
+
+// objectives: 1.1.2, 1.2.3
+::S07-Q10:: For a platform-as-a-service database, which responsibilities remain with the customer? {
+    ~Patching the database engine and the underlying operating system
+    =The data stored in the database, and the identities and access granted to it
+    ~The physical hosts and physical network
+    ~Nothing; PaaS transfers all responsibility to the provider
+}

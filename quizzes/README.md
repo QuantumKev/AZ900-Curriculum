@@ -130,6 +130,20 @@ the final readiness set. The per-instrument breakdown lives in
 
 ## Using the bank
 
+Read [`administration-guide.md`](./administration-guide.md) first — it covers the four
+delivery options (paper, Microsoft Forms, Google Forms, LMS import), what learners need for
+each, the in-session timing, and the four-step review script.
+
+Generated artifacts, all produced by `tools/` and never hand-edited:
+
+| Artifact | What it is |
+| --- | --- |
+| [`../handouts/`](../handouts/) | Questions-only handout plus answer grid for every quiz, in Markdown and print-ready PDF |
+| [`../handouts/objective-checklist.md`](../handouts/objective-checklist.md) | All 57 objectives with confident / shaky / blank columns, for learners to carry |
+| [`../exports/item-bank.csv`](../exports/item-bank.csv) | All 199 items as data: type, stem, options, answer, objective IDs, rationale, source |
+| [`../exports/gift/`](../exports/gift/) | GIFT files for LMS import, one per quiz, with objective IDs preserved as comments |
+| [`results-tracker.csv`](./results-tracker.csv) | Per-objective miss tracker; the three re-teaching decisions in Sessions 4–12 depend on it |
+
 **Instructors:** print or import the Questions half, keep the key. Review every item
 immediately after the quiz — the review is where the learning happens, not the scoring.
 For missed items, name the objective ID out loud so learners can find it on their

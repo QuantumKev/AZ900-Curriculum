@@ -1,0 +1,102 @@
+// Session 11 Quiz — Monitoring, and Domain 3 Checkpoint
+// Generated from quizzes/session-11-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 3.4.1
+::S11-Q1:: What does Azure Advisor do? {
+    ~Reports whether Azure itself is experiencing an outage
+    =Evaluates your Azure resources and makes recommendations to improve reliability, security, performance, operational excellence, and cost
+    ~Collects and queries log and metric data from your resources
+    ~Estimates the cost of resources before you deploy them
+}
+
+// objectives: 3.4.1
+::S11-Q2:: Which are Azure Advisor recommendation categories? (Select all that apply.) {
+    ~%20.0%Reliability
+    ~%20.0%Security
+    ~%20.0%Performance
+    ~%20.0%Operational Excellence
+    ~%20.0%Cost
+}
+
+// objectives: 3.4.2
+::S11-Q3:: A virtual machine in your subscription is unreachable and you need to know whether the problem is on Azure's side or yours, for that specific VM. Which view should you check? {
+    ~Azure Status
+    ~Service Health
+    =Resource Health
+    ~Application Insights
+}
+
+// objectives: 3.4.2
+::S11-Q4:: You hear reports of a widespread outage and want a global picture of Azure health across all services and regions. Which view should you check? {
+    =Azure Status
+    ~Service Health
+    ~Resource Health
+    ~Azure Advisor
+}
+
+// objectives: 3.4.2
+::S11-Q5:: Which information does Service Health show that Azure Status does not? {
+    =Outages, planned maintenance, and health advisories specific to the services and regions you actually use, with alerting
+    ~The global health of every Azure service in every region
+    ~Application request rates and response times
+    ~Estimated monthly spend by resource group
+}
+
+// objectives: 3.4.3
+::S11-Q6:: (Match each need to the Azure Monitor capability that fits\: Log Analytics, Azure Monitor alerts, Application Insights.) {
+    =Write and run a query against collected data to find all errors in the last hour -> Log Analytics
+    =Be notified when a virtual machine's CPU stays above 80 percent, with the notification routed to an on-call group -> Azure Monitor alerts
+    =Track a web application's request rates, response times, failure rates, and dependency calls -> Application Insights
+}
+
+// objectives: 3.1.1, 3.1.2, 3.1.3, 3.1.4
+::S11-Q7:: (Domain 3 checkpoint — cost management.) (Match each need to the right capability\: the pricing calculator, Microsoft Cost Management cost analysis, budgets with alerts, tags.) {
+    =Estimate what a proposed design will cost in two candidate regions before deploying it -> pricing calculator
+    =See where spend has already accrued, broken down by subscription, resource group, or service -> cost analysis
+    =Be notified when spending crosses a defined threshold, and optionally trigger automation -> budgets with alerts
+    =Attach the metadata that makes cost reports answer "which cost center" and "which environment" -> tags
+}
+
+// objectives: 3.2.1, 3.2.2, 3.2.3
+::S11-Q8i:: Azure Policy can prevent a noncompliant resource from being created, and also evaluates resources that already existed. {T}
+
+::S11-Q8ii:: A Delete lock allows authorized users to read and update a resource but not delete it. {T}
+
+::S11-Q8iii:: Microsoft Purview's purpose is to discover and classify data across your estate and trace its lineage. {T}
+
+::S11-Q8iv:: A subscription Owner can delete a resource that has a Delete lock applied, without removing the lock. {F}
+
+// objectives: 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5
+::S11-Q9:: (Domain 3 checkpoint — managing and deploying.) (Match each need to the right option\: Azure portal, Azure Cloud Shell, Azure Arc, infrastructure as code, ARM template.) {
+    =A browser-based shell, already authenticated to your credentials, supporting both Azure PowerShell and the Azure CLI -> Azure Cloud Shell
+    =Govern servers in your own datacenter and Kubernetes clusters in another cloud from Azure -> Azure Arc
+    =A declarative JSON file describing the resources to deploy, which Azure validates and orchestrates -> ARM template
+    =The practice of managing infrastructure through code and templates rather than manual configuration -> infrastructure as code
+    =A web console with custom dashboards for building, managing, and monitoring resources -> Azure portal
+}
+
+// objectives: 1.1.2
+::S11-Q10:: For an application hosted on an IaaS virtual machine, which responsibilities are the customer's? (Select all that apply.) {
+    ~%33.33333%Operating system patching
+    ~%-100%Physical datacenter security
+    ~%33.33333%The data stored by the application
+    ~%33.33333%Identity and access configuration
+    ~%-100%Maintenance of the physical network
+}
+
+// objectives: 2.2.5
+::S11-Q11:: An organization needs a private, dedicated connection from its datacenter to Azure that does not traverse the public internet. Which option meets the requirement? {
+    ~Site-to-site VPN
+    ~Point-to-site VPN
+    =Azure ExpressRoute
+    ~Virtual network peering
+}
+
+// objectives: 2.4.6
+::S11-Q12:: Which action best reflects the Zero Trust principle of "assume breach"? {
+    ~Trusting all traffic originating inside the corporate network
+    =Segmenting access and verifying end-to-end encryption to limit the impact of a compromise
+    ~Requiring a password of at least 16 characters
+    ~Publishing all applications through a single public endpoint
+}

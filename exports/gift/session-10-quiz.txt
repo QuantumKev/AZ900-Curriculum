@@ -1,0 +1,101 @@
+// Session 10 Quiz — Managing and Deploying Azure Resources
+// Generated from quizzes/session-10-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 3.3.1
+::S10-Q1:: Which statement about the Azure portal is correct? {
+    ~It is a downloadable desktop application for Windows only
+    =It is a web-based console for building, managing, and monitoring Azure resources, with support for custom dashboards
+    ~It requires Azure PowerShell to be installed locally
+    ~It is available in a single datacenter, so portal outages affect all customers globally
+}
+
+// objectives: 3.3.2
+::S10-Q2:: What is Azure Cloud Shell? {
+    =A browser-based shell, authenticated to your Azure credentials, that supports both Azure PowerShell and the Azure CLI
+    ~A local terminal emulator you install on Windows, macOS, or Linux
+    ~A remote desktop session into an Azure virtual machine
+    ~A cost analysis view in the Azure portal
+}
+
+// objectives: 3.3.2
+::S10-Q3:: What is the real difference between the Azure CLI and Azure PowerShell? {
+    ~The CLI can only read; PowerShell can write
+    =They are functionally equivalent, differing mainly in command syntax
+    ~The CLI works only on Linux; PowerShell works only on Windows
+    ~PowerShell runs in Cloud Shell; the CLI does not
+}
+
+// objectives: 3.3.3
+::S10-Q4:: An operations team must apply consistent Azure Policy assignments and inventory tracking to servers in their own datacenter and Kubernetes clusters running in another public cloud, managing everything from Azure. Which service enables this? {
+    ~Azure Migrate
+    =Azure Arc
+    ~Azure Virtual Desktop
+    ~Azure Monitor
+}
+
+// objectives: 3.3.3
+::S10-Q5:: Which resource types can Azure Arc currently manage outside of Azure? (Select all that apply.) {
+    ~%25.0%Servers
+    ~%25.0%Kubernetes clusters
+    ~%25.0%SQL Server
+    ~%25.0%Azure data services
+    ~%-100%Azure subscriptions
+}
+
+// objectives: 3.3.4
+::S10-Q6:: What does infrastructure as code mean? {
+    ~Writing application source code that runs on cloud infrastructure
+    =Managing and provisioning infrastructure through code and templates instead of manual configuration
+    ~Storing infrastructure diagrams in a source control repository
+    ~Running scripted health checks against deployed resources
+}
+
+// objectives: 3.3.5
+::S10-Q7:: Which statement about Azure Resource Manager is correct? {
+    ~Only the Azure portal communicates with Resource Manager; CLI and PowerShell bypass it
+    =Every request from the portal, CLI, PowerShell, SDKs, and APIs goes through Resource Manager, which authenticates and authorizes it before passing it to the service
+    ~Resource Manager is a monitoring service for application telemetry
+    ~Resource Manager is only used for template deployments
+}
+
+// objectives: 3.3.5
+::S10-Q8:: Which are benefits of using ARM templates? (Select all that apply.) {
+    ~%25.0%Declarative syntax that defines what to deploy rather than how to deploy it
+    ~%25.0%Repeatable results when the same template is reused across environments
+    ~%25.0%Automatic handling of resource dependency order and parallel deployment
+    ~%-100%Guaranteed lower cost for the deployed resources
+    ~%25.0%Modularity through reusable and nested templates
+}
+
+// objectives: 3.3.4, 3.3.5
+::S10-Q9:: A team deploys the same environment to development, test, and production and needs the resources created in the correct dependency order every time, with no manual steps. Which approach fits best? {
+    ~Screenshot the portal configuration and repeat it manually
+    =Deploy from an ARM template
+    ~Run ad hoc CLI commands from a chat log
+    ~Use a resource lock on the production resource group
+}
+
+// objectives: 2.2.4
+::S10-Q10:: A team must host a web application with automatic scaling and no operating system to manage, and deploy it continuously from a Git repository. Which service fits best? {
+    ~Azure Virtual Machines
+    =Azure App Service
+    ~Azure Data Box
+    ~Azure Cloud Shell
+}
+
+// objectives: 3.2.2, 3.2.3
+::S10-Q11:: Which combination correctly matches the requirement to the tool? {
+    ~Restrict deployments to approved regions → resource lock; prevent accidental deletion → Azure Policy
+    =Restrict deployments to approved regions → Azure Policy; prevent accidental deletion → resource lock
+    ~Both requirements → Azure RBAC
+    ~Both requirements → Azure Arc
+}
+
+// objectives: 3.2.3
+::S10-Q12:: You apply a ReadOnly lock to a resource group, then try to deploy a new resource into it from an ARM template. What happens? {
+    ~The deployment succeeds, because template deployments bypass locks
+    =The deployment fails, because a ReadOnly lock prevents updates to the locked scope until the lock is removed
+    ~The deployment succeeds but the new resource is created without tags
+    ~The deployment succeeds only if run from Cloud Shell
+}

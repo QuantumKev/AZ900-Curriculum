@@ -1,0 +1,100 @@
+// Session 1 Quiz — Cloud Computing Foundations
+// Generated from quizzes/session-01-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 1.1.1
+::S01-Q1:: Which statement best describes cloud computing? {
+    ~Running virtualization software on servers your organization owns
+    =Delivering computing services such as compute, storage, and networking over the internet
+    ~Backing up on-premises data to a second building
+    ~Buying servers in bulk to lower the cost per unit
+}
+
+// objectives: 1.1.2
+::S01-Q2:: Under the shared responsibility model, which items remain your responsibility no matter which cloud service type you use? (Select all that apply.) {
+    ~%33.33333%The data and information you store in the cloud
+    ~%-100%The physical hosts running your workloads
+    ~%33.33333%The accounts and identities in your environment
+    ~%-100%The physical network in the datacenter
+    ~%33.33333%The devices allowed to connect to your cloud resources
+}
+
+// objectives: 1.1.2
+::S01-Q3:: Which three items are always the cloud provider's responsibility? {
+    ~Operating systems, applications, and network controls
+    =The physical datacenter, the physical network, and the physical hosts
+    ~Identity and access, data, and devices
+    ~Middleware, runtime, and application code
+}
+
+// objectives: 1.1.2
+::S01-Q4:: You deploy a virtual machine in Azure and install a database on it yourself. Who is responsible for applying database patches? {
+    ~Microsoft, because the VM runs in Microsoft's datacenter
+    =You, because you installed and manage the software on the VM
+    ~Neither party; database patching is automatic in Azure
+    ~Microsoft for security patches, you for feature updates
+}
+
+// objectives: 1.1.2
+::S01-Q5:: Which cloud service type places the most responsibility on the customer? {
+    ~SaaS
+    ~PaaS
+    =IaaS
+    ~All three place equal responsibility on the customer
+}
+
+// objectives: 1.1.3
+::S01-Q6:: An organization runs a cloud environment used only by itself, hosted in its own datacenter. Which cloud model is this? {
+    ~Public cloud
+    =Private cloud
+    ~Hybrid cloud
+    ~Multicloud
+}
+
+// objectives: 1.1.3
+::S01-Q7:: What most clearly distinguishes a public cloud from a private cloud? {
+    ~A public cloud is always cheaper
+    =A public cloud is available to anyone who wants to purchase the services
+    ~A public cloud cannot be used for regulated workloads
+    ~A public cloud has no service-level guarantees
+}
+
+// objectives: 1.1.4
+::S01-Q8:: A retailer keeps its customer database on its own private cloud infrastructure but wants to add public cloud capacity during a seasonal sales spike. Which cloud model does this describe? {
+    ~Public cloud
+    ~Private cloud
+    =Hybrid cloud
+    ~Sovereign cloud
+}
+
+// objectives: 1.1.3
+::S01-Q9:: An organization uses services from two different public cloud providers and manages resources and security in both. What is this arrangement called? {
+    ~Hybrid cloud
+    =Multicloud
+    ~Private cloud
+    ~Community cloud
+}
+
+// objectives: 1.1.4
+::S01-Q10:: A startup has no existing hardware, expects unpredictable growth, and wants to avoid buying servers. Which cloud model is the most appropriate starting point, and why? {
+    ~Private cloud, because it gives complete control over resources and security
+    =Public cloud, because it requires no capital expenditure to scale up
+    ~Hybrid cloud, because it provides the most flexibility
+    ~Private cloud, because data is not collocated with other tenants' data
+}
+
+// objectives: 1.1.5
+::S01-Q11:: In traditional IT budgeting, which term describes up-front spending on physical infrastructure such as servers and datacenter space? {
+    ~Operational expenditure (OpEx)
+    =Capital expenditure (CapEx)
+    ~Consumption-based spending
+    ~Total cost of ownership
+}
+
+// objectives: 1.1.5
+::S01-Q12:: Which statement about the consumption-based model is correct? {
+    ~You pay a fixed monthly fee regardless of usage
+    ~You buy capacity a year in advance to guarantee availability
+    =You pay for the resources you use and can release them when demand drops
+    ~You pay only for storage; compute is included
+}

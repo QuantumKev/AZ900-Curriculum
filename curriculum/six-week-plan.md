@@ -36,6 +36,12 @@ Every warm-up, quiz, and checkpoint referenced below is written and ready to use
 checkpoints and the final readiness set are separate files. Carry-forward composition per
 quiz is tabulated in [`../quizzes/README.md`](../quizzes/README.md).
 
+Before the first session, decide how you will deliver quizzes — paper, Microsoft Forms,
+Google Forms, or LMS import — using
+[`../quizzes/administration-guide.md`](../quizzes/administration-guide.md). Print-ready
+handouts for every quiz are in [`../handouts/`](../handouts/), along with the objective
+checklist learners mark up in every quiz review.
+
 ## Deviation from the suggested sequence
 
 The suggested 12-session sequence was kept almost intact, because it already tracks the

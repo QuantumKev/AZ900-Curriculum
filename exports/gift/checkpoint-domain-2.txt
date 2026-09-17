@@ -1,0 +1,113 @@
+// Domain 2 Checkpoint — Describe Azure Architecture and Services
+// Generated from quizzes/checkpoint-domain-2.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 2.1.1, 2.1.2, 2.1.3
+::checkpoint-domain-2-Q1:: (Match each description to the correct term\: datacenter, region, availability zone, region pair, sovereign region.) {
+    =Physically separate datacenters within one region, each with independent power, cooling, and networking -> availability zone
+    =A geographical area containing one or more nearby networked datacenters -> region
+    =A physical facility of racked servers that customers do not deploy to directly -> datacenter
+    =Two regions in the same geography, at least 300 miles apart, used for replication and staged updates -> region pair
+    =An isolated instance of Azure for legal or compliance purposes -> sovereign region
+}
+
+// objectives: 2.1.4, 2.1.5, 2.1.6, 2.1.7
+::checkpoint-domain-2-Q2i:: A resource can belong to only one resource group at a time. {T}
+
+::checkpoint-domain-2-Q2ii:: A subscription is both a billing boundary and an access control boundary. {T}
+
+::checkpoint-domain-2-Q2iii:: Management groups sit above subscriptions, and subscriptions inherit the governance conditions applied to them. {T}
+
+::checkpoint-domain-2-Q2iv:: Resource groups can be nested inside other resource groups. {F}
+
+// objectives: 2.2.1
+::checkpoint-domain-2-Q3:: A team needs to run several instances of an application on one host, starting and stopping them quickly, without managing a separate operating system per instance — and separately needs to run short code triggered by queue messages. Which two compute options fit? {
+    ~Virtual machines for both
+    =Containers for the first, functions for the second
+    ~Functions for the first, virtual machines for the second
+    ~Azure Virtual Desktop for both
+}
+
+// objectives: 2.2.2
+::checkpoint-domain-2-Q4:: Which combination correctly matches the requirement to the service? {
+    ~Identical load-balanced VMs that scale automatically → availability set; centrally managed Windows desktops for remote workers → Azure Virtual Desktop
+    =Identical load-balanced VMs that scale automatically → virtual machine scale set; centrally managed Windows desktops for remote workers → Azure Virtual Desktop
+    ~Identical load-balanced VMs that scale automatically → Azure App Service; centrally managed Windows desktops for remote workers → virtual machine scale set
+    ~Both requirements → Azure Container Apps
+}
+
+// objectives: 2.2.3
+::checkpoint-domain-2-Q5:: Which items must be specified when provisioning a virtual machine? (Select all that apply.) {
+    ~%33.33333%VM size, including family, vCPU count, and RAM
+    ~%33.33333%Storage disks
+    ~%33.33333%Virtual network and network interface
+    ~%-100%An Azure Policy initiative
+    ~%-100%A Microsoft Purview data map
+}
+
+// objectives: 2.2.4
+::checkpoint-domain-2-Q6:: A development team wants managed hosting for a web app and a REST API, in the language of their choice, with automatic scaling and Git-based deployment, and no operating system to maintain. Which option fits? {
+    ~Azure Virtual Machines in an availability set
+    =Azure App Service
+    ~Azure Data Box
+    ~Azure Virtual Desktop
+}
+
+// objectives: 2.2.5
+::checkpoint-domain-2-Q7:: (Match each connectivity requirement to the right option\: virtual network peering, site-to-site VPN, point-to-site VPN, Azure ExpressRoute, Azure DNS.) {
+    =Encrypted connection from a single laptop into an Azure virtual network -> point-to-site VPN
+    =Private, dedicated connectivity from a datacenter to Azure that does not use the public internet -> ExpressRoute
+    =Direct private connectivity between two Azure virtual networks over the Microsoft backbone -> virtual network peering
+    =Encrypted connection from an on-premises network's gateway to an Azure virtual network over the internet -> site-to-site VPN
+    =Hosting DNS domains and resolving names for Azure and external resources -> Azure DNS
+}
+
+// objectives: 2.2.6
+::checkpoint-domain-2-Q8:: A database must be reachable from resources inside a virtual network using a private IP address from that network's address space, and not from the internet. What should be configured? {
+    ~A public endpoint
+    =A private endpoint
+    ~A network security group rule allowing all inbound traffic
+    ~ExpressRoute Global Reach
+}
+
+// objectives: 2.3.1, 2.3.2
+::checkpoint-domain-2-Q9:: (Match each requirement to the Azure Storage service and access tier combination that fits.) {
+    =Serving website images that users request constantly -> Blob Storage
+    =Customer invoices retained for compliance, accessed a few times a year but needed immediately when accessed -> Blob Storage
+    =Long-term backups that are rarely accessed, retained for at least 180 days, where retrieval latency is acceptable -> Blob Storage
+    =A managed file share that Windows and Linux clients mount concurrently -> Azure Files
+}
+
+// objectives: 2.3.3, 2.3.4
+::checkpoint-domain-2-Q10:: An organization needs a storage design that survives both an availability zone failure in the primary region and a regional disaster, and must be able to read the secondary copy before any failover. Which redundancy option fits, and which account type supports it? {
+    ~LRS on premium page blobs
+    ~ZRS on premium file shares
+    =RA-GZRS on standard general-purpose v2
+    ~GRS on premium block blobs
+}
+
+// objectives: 2.3.5, 2.3.6
+::checkpoint-domain-2-Q11:: (Match each need to the right tool\: AzCopy, Azure Storage Explorer, Azure File Sync, Azure Migrate, Azure Data Box.) {
+    =Assess an on-premises server estate and migrate it to Azure from a single portal -> Azure Migrate
+    =Ship 60 TB into Azure when the network connection is too slow -> Azure Data Box
+    =Command-line copying and one-direction synchronization of blobs and files -> AzCopy
+    =A cross-platform graphical app for managing blobs and files -> Azure Storage Explorer
+    =Keep a Windows file server bidirectionally synced with Azure Files, caching hot files locally -> Azure File Sync
+}
+
+// objectives: 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8
+::checkpoint-domain-2-Q12i:: Microsoft Entra Domain Services provides a managed domain with domain join, group policy, LDAP, and Kerberos/NTLM without you deploying domain controllers. {T}
+
+::checkpoint-domain-2-Q12ii:: Windows Hello for Business, the Microsoft Authenticator app, and FIDO2 security keys are the three passwordless options in Microsoft Entra ID. {T}
+
+::checkpoint-domain-2-Q12iii:: Conditional Access collects signals, makes a decision, then enforces it by allowing, blocking, or challenging for multifactor authentication. {T}
+
+::checkpoint-domain-2-Q12iv:: Azure RBAC uses a deny model, so the most restrictive role assignment always wins. {F}
+
+::checkpoint-domain-2-Q12v:: The three Zero Trust principles are verify explicitly, use least privilege access, and assume breach. {T}
+
+::checkpoint-domain-2-Q12vi:: In defense in depth, the perimeter layer uses DDoS protection to filter large-scale attacks. {T}
+
+::checkpoint-domain-2-Q12vii:: Microsoft Defender for Cloud provides a secure score, prioritized recommendations, and security alerts across Azure, hybrid, and other clouds. {T}
+
+::checkpoint-domain-2-Q12viii:: B2B collaboration users are typically represented in your directory as guests. {T}

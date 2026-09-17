@@ -118,7 +118,9 @@ pricing models in Session 8, and takes the largest share of Session 12.
 Every instrument below is written and ready to use in [`../quizzes/`](../quizzes/):
 **199 scored items plus 66 warm-up retrieval prompts**, each traceable to an objective ID
 and a Microsoft Learn source. Conventions, carry-forward composition, and scoring rules
-are in [`../quizzes/README.md`](../quizzes/README.md).
+are in [`../quizzes/README.md`](../quizzes/README.md); delivery options and the in-class
+review script are in
+[`../quizzes/administration-guide.md`](../quizzes/administration-guide.md).
 
 | Instrument | When | Length | Scope | Purpose |
 | --- | --- | --- | --- | --- |
@@ -186,6 +188,29 @@ Relative days after the final session. No calendar dates.
 If the readiness bar is not met by day 9, reschedule rather than sit the exam. The retake
 wait after a failed attempt is 24 hours for a first retake, but a reschedule costs
 nothing but time.
+
+## Course materials for learners
+
+| Item | Give it to them | Source |
+| --- | --- | --- |
+| Syllabus | Before Session 1 | [`../syllabus/course-syllabus.md`](../syllabus/course-syllabus.md) and its PDF |
+| Objective checklist | Session 1, and they keep it all course | [`../handouts/objective-checklist.md`](../handouts/objective-checklist.md) and its PDF |
+| Quiz handouts | Each session, if delivering on paper | [`../handouts/`](../handouts/) |
+| Answer keys with rationale and sources | After each quiz review | The second half of each file in [`../quizzes/`](../quizzes/) |
+| 10-day readiness plan | Session 12 | This document, below |
+
+The syllabus is student-facing and covers what learners must do before Session 1 — create a
+free Microsoft Learn account using a personal Microsoft account, and choose between an Azure
+free account, a provided subscription, or the no-cost path. It also states plainly that the
+course can be completed without ever creating an Azure account.
+
+Rebuild any of these after editing the source files:
+
+```bash
+python3 tools/export-quizzes.py     # handouts, item-bank.csv, GIFT exports
+python3 tools/build-checklist.py    # objective checklist
+bash tools/build-all-pdfs.sh        # every PDF
+```
 
 ## Instructor preparation
 

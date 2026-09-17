@@ -1,0 +1,100 @@
+// Session 9 Quiz — Governance and Compliance
+// Generated from quizzes/session-09-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 3.2.2
+::S09-Q1:: What is the purpose of Azure Policy? {
+    ~To control who can perform actions on Azure resources
+    =To create, assign, and manage rules that control or audit resource configurations so they stay compliant with your standards
+    ~To prevent resources from being deleted
+    ~To monitor application performance and availability
+}
+
+// objectives: 3.2.2
+::S09-Q2:: What is an Azure Policy initiative? {
+    ~A single policy rule applied to one resource
+    =A group of related policy definitions assigned and tracked together toward a larger compliance goal
+    ~A role assignment that spans multiple subscriptions
+    ~A cost budget with an alert threshold
+}
+
+// objectives: 3.2.2
+::S09-Q3:: You assign a policy at a resource group that restricts VM sizes. Which resources does it affect? {
+    ~Only resources created after the assignment
+    ~Only resources explicitly added to the policy scope
+    =All resources in that resource group, including existing VMs, which are evaluated and monitored for compliance
+    ~Nothing until the policy is assigned on each resource individually
+}
+
+// objectives: 3.2.2
+::S09-Q4:: Which statements about Azure Policy are correct? (Select all that apply.) {
+    ~%25.0%Policy can prevent noncompliant resources from being created
+    ~%25.0%Policy assignments are inherited by resources within the assigned scope
+    ~%25.0%Policy can automatically remediate some noncompliant configurations, such as adding a missing required tag
+    ~%-100%Policy replaces the need for Azure RBAC
+    ~%25.0%Resources can be marked as exceptions to a policy
+}
+
+// objectives: 3.2.3
+::S09-Q5:: A team must ensure a production resource group cannot be deleted by accident, while still allowing engineers to update the resources inside it. What should they apply? {
+    ~A ReadOnly lock on the resource group
+    =A Delete lock on the resource group
+    ~The Reader role at resource group scope
+    ~An Azure Policy denying all write operations
+}
+
+// objectives: 3.2.3
+::S09-Q6:: A ReadOnly lock is applied to a resource. What can authorized users do? {
+    ~Read, update, and delete the resource
+    =Read the resource, but not update or delete it
+    ~Nothing; the resource becomes inaccessible
+    ~Update the resource but not delete it
+}
+
+// objectives: 3.2.3
+::S09-Q7:: You are an Owner of a subscription and need to delete a resource that has a Delete lock applied. What must happen first? {
+    ~Nothing; Owner permissions override resource locks
+    =The lock must be removed, because locks apply regardless of RBAC permissions
+    ~An Azure Policy exception must be created
+    ~The resource must be moved to another resource group
+}
+
+// objectives: 3.2.1
+::S09-Q8:: What is the purpose of Microsoft Purview? {
+    =To provide a unified view of your data estate for data governance, risk, and compliance, including automated discovery, sensitive data classification, and end-to-end lineage
+    ~To detect and respond to security threats against virtual machines
+    ~To estimate the cost of Azure resources before deployment
+    ~To deploy Azure resources from declarative templates
+}
+
+// objectives: 3.2.1
+::S09-Q9:: Which requirement is the best fit for Microsoft Purview rather than for Azure Policy? {
+    ~Ensuring all new storage accounts are deployed only in approved regions
+    =Finding where sensitive data is stored across on-premises, multicloud, and SaaS data, and tracing its lineage
+    ~Preventing accidental deletion of a production resource group
+    ~Notifying the finance team when spend passes 80% of budget
+}
+
+// objectives: 2.1.7
+::S09-Q10:: An organization wants one policy to apply to all 20 of its subscriptions without assigning it 20 times. Where should the policy be assigned? {
+    ~On each resource group
+    =At the management group containing the subscriptions
+    ~On the Microsoft Entra tenant only
+    ~On a single representative subscription
+}
+
+// objectives: 2.4.5
+::S09-Q11:: Which tool answers the question "what is this user allowed to do in this subscription," as opposed to "is this resource configured correctly"? {
+    ~Azure Policy
+    =Azure RBAC
+    ~Resource locks
+    ~Microsoft Purview
+}
+
+// objectives: 3.1.4
+::S09-Q12:: A governance standard requires that every new resource carry an `Owner` tag, and that the tag be restored if someone removes it. What enforces this? {
+    ~A resource lock
+    =Azure Policy
+    ~Microsoft Cost Management budgets
+    ~Azure RBAC role assignment
+}

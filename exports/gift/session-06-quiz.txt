@@ -1,0 +1,102 @@
+// Session 6 Quiz — Azure Storage
+// Generated from quizzes/session-06-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 2.3.1
+::S06-Q1:: (Match each requirement to the Azure Storage service that fits\: Blob Storage, Azure Files, Queue Storage, Azure Disk Storage, Table Storage.) {
+    =Store and stream large video files to browsers -> Blob Storage
+    =Provide a managed file share that Windows, Linux, and macOS clients can mount concurrently -> Azure Files
+    =Hold messages so application components can process work asynchronously -> Queue Storage
+    =Provide a block-level volume for an Azure virtual machine -> Azure Disk Storage
+    =Store large amounts of structured, non-relational data in a NoSQL store -> Table Storage
+}
+
+// objectives: 2.3.1
+::S06-Q2:: Which statement about Azure Blob Storage is correct? {
+    ~It is designed for structured relational data with enforced schemas
+    =It is an object store for unstructured text and binary data, accessible over HTTP or HTTPS
+    ~It can only be accessed from inside the virtual network where it is created
+    ~It requires an Azure virtual machine to be running to serve content
+}
+
+// objectives: 2.3.2
+::S06-Q3:: Which access tier is appropriate for data that is rarely accessed, stored for at least 180 days, and can tolerate retrieval latency? {
+    ~Hot
+    ~Cool
+    ~Cold
+    =Archive
+}
+
+// objectives: 2.3.2
+::S06-Q4:: Which statements about blob access tiers are correct? (Select all that apply.) {
+    ~%25.0%The cool tier is intended for data stored for at least 30 days
+    ~%25.0%The cold tier is intended for data stored for at least 90 days
+    ~%-100%The archive tier can be set at the storage account level
+    ~%25.0%Hot, cool, and cold tiers can be set at the account level
+    ~%25.0%Cool and cold tiers have lower storage costs but higher access costs
+}
+
+// objectives: 2.3.3, 2.1.2
+::S06-Q5:: Which redundancy option replicates data synchronously across three availability zones in the primary region? {
+    ~Locally redundant storage (LRS)
+    =Zone-redundant storage (ZRS)
+    ~Geo-redundant storage (GRS)
+    ~Read-access geo-redundant storage (RA-GRS)
+}
+
+// objectives: 2.3.3, 1.2.2
+::S06-Q6:: An organization needs the highest resilience for a critical dataset\: protection against both a zone failure in the primary region and a regional disaster. Which redundancy option should they choose? {
+    ~LRS
+    ~ZRS
+    ~GRS
+    =GZRS
+}
+
+// objectives: 2.3.3
+::S06-Q7:: With GRS configured and no failover performed, can an application read the data in the secondary region? {
+    ~Yes, secondary-region data is always readable
+    =No, unless read access to the secondary region is enabled with the read-access variant
+    ~Yes, but only through AzCopy
+    ~No, secondary-region data is never readable under any configuration
+}
+
+// objectives: 2.3.4
+::S06-Q8:: Which statements about storage accounts are correct? (Select all that apply.) {
+    ~%25.0%Standard general-purpose v2 is the recommended account type for most Azure Storage scenarios
+    ~%25.0%Storage account names must be globally unique in Azure
+    ~%25.0%Storage account names may be 3 to 24 characters using numbers and lowercase letters only
+    ~%-100%Premium page blobs support all redundancy options
+    ~%25.0%NFS file share support requires the premium file shares account type
+}
+
+// objectives: 2.3.6
+::S06-Q9:: A company must move 60 TB of archive data into Azure, and its internet connection is too slow to transfer that volume in a reasonable time. Which option fits best? {
+    ~AzCopy
+    ~Azure File Sync
+    =Azure Data Box
+    ~Azure Storage Explorer
+}
+
+// objectives: 2.3.5
+::S06-Q10:: Which tool keeps an on-premises Windows file server bidirectionally synchronized with Azure Files, with frequently accessed files cached locally? {
+    ~AzCopy
+    =Azure File Sync
+    ~Azure Migrate
+    ~Azure Storage Explorer
+}
+
+// objectives: 2.3.6
+::S06-Q11:: A team needs to assess an on-premises server estate and then migrate those servers to Azure, tracking the whole effort from one place. Which service is designed for this? {
+    ~Azure Data Box
+    =Azure Migrate
+    ~Azure Arc
+    ~Azure Advisor
+}
+
+// objectives: 2.2.3
+::S06-Q12:: When creating a virtual machine, which choice most directly affects the VM's storage performance? {
+    ~The resource group name
+    =The disk type and configuration selected for the VM
+    ~The tags applied to the VM
+    ~The subscription's billing cycle
+}

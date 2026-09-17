@@ -15,12 +15,17 @@ handouts are later phases. See [Status](#status) below.
 
 | File | What it is |
 | --- | --- |
+| [`syllabus/course-syllabus.md`](syllabus/course-syllabus.md) · [PDF](syllabus/course-syllabus.pdf) | Student-facing syllabus: description, outcomes, schedule, assessment, what learners must do before Session 1 and each week, materials, policies, FAQ |
+| [`handouts/`](handouts/) | Print-ready PDFs: the objective checklist learners carry all course, and a questions-only handout with answer grid for every quiz |
+| [`quizzes/administration-guide.md`](quizzes/administration-guide.md) | How to actually run the quizzes — paper, Microsoft Forms, Google Forms, or LMS import — and what learners need for each |
 | [`curriculum/course-overview.md`](curriculum/course-overview.md) | Audience, prerequisites, outcomes, exam snapshot, instructional model, assessment strategy, hands-on environment options, the 10-day post-course readiness plan, instructor prep, accessibility, risks |
 | [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md) | All 12 sessions, block by block, with minute budgets, practice activities, quiz scope, assignments, and source links per session |
 | [`curriculum/exam-objective-map.md`](curriculum/exam-objective-map.md) | All 57 objectives with taught / practiced / quizzed / cumulatively-reviewed columns, coverage totals, time-versus-weight analysis, and the gap list |
 | [`quizzes/`](quizzes/) | The full assessment bank: warm-ups, 11 session quizzes, 2 domain checkpoints, and the timed final readiness set — 199 scored items plus 66 retrieval prompts, with answer keys, objective IDs, and sources. Start at [`quizzes/README.md`](quizzes/README.md) |
 | [`sources/microsoft-learn-links.md`](sources/microsoft-learn-links.md) | Every primary source, learning path, module, guided project, verified unit, and per-objective Azure documentation link |
 | [`sources/source-validation-log.md`](sources/source-validation-log.md) | What was verified and how, conflicts with secondary sources, outdated terminology, NEEDS VERIFICATION items, and the re-validation procedure |
+| [`exports/`](exports/) | Generated for import: `item-bank.csv` with all 199 items, GIFT files per quiz for LMS import, and an import report |
+| [`tools/`](tools/) | Scripts that generate the handouts, checklist, exports, and PDFs. Nothing in `handouts/` or `exports/` is hand-maintained |
 
 ## Exam snapshot
 
@@ -94,11 +99,17 @@ Every disagreement is recorded in
 
 ## How to use this repository
 
+**Learners:** everything you need is the [syllabus](syllabus/course-syllabus.pdf) and the
+[objective checklist](handouts/objective-checklist.pdf). The syllabus tells you what to set
+up before Session 1 — a free Microsoft Learn account, and a decision about hands-on work.
+
 **Program leads:** read [`curriculum/course-overview.md`](curriculum/course-overview.md)
 first. It defines the audience, the assessment strategy, the hands-on environment options
 including a no-cost path, and the 10-day post-course exam plan.
 
-**Instructors:** teach from [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md).
+**Instructors:** teach from [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md),
+and read [`quizzes/administration-guide.md`](quizzes/administration-guide.md) before the
+first session to decide how you will deliver quizzes.
 Each session lists its objectives, minute-by-minute blocks, practice activity with a
 no-cost fallback, quiz scope, assignment, and source links. Before each cohort, run the
 re-validation procedure at the end of
@@ -135,9 +146,13 @@ answer keys rather than maintained by hand.
 quizzes with progressive carry-forward, 2 domain checkpoints, and a timed 45-item final
 readiness set. 199 scored items, all objective-mapped and Microsoft Learn sourced.
 
+**Course-delivery pack — complete.** Student syllabus (Markdown and PDF), the objective
+checklist, printable handouts for every quiz, the quiz administration guide, an item-bank
+CSV, GIFT files for LMS import, and the scripts that regenerate all of it.
+
 Not yet built:
 
-- Phase 3 — session materials: slides, instructor notes, learner handouts, objective checklists
+- Phase 3 — session materials: slides and instructor notes per session
 - Phase 4 — lab guides: step-by-step versions of each session's practice activity, with no-cost variants
 - Phase 5 — cohort operations: enrollment communications, readiness tracking, exam-scheduling support
 

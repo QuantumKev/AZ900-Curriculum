@@ -1,0 +1,374 @@
+// Final Readiness Set — Session 12
+// Generated from quizzes/final-readiness-set.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 1.1.1
+::final-readiness-set-Q1:: An organization stops buying servers and instead rents compute, storage, and networking from a provider over the internet, releasing resources when it no longer needs them. Which characteristic of cloud computing does this describe? {
+    ~Virtualization
+    =Consumption of services delivered over the internet rather than owned infrastructure
+    ~Disaster recovery
+    ~Containerization
+}
+
+// objectives: 1.1.2
+::final-readiness-set-Q2:: A company runs an application on an Azure virtual machine and installs its own web server software on it. Which responsibilities belong to the company? (Select all that apply.) {
+    ~%33.33333%Patching the web server software
+    ~%33.33333%Patching the guest operating system
+    ~%-100%Maintaining the physical host hardware
+    ~%33.33333%Controlling who has access to the application's data
+    ~%-100%Securing the datacenter's physical perimeter
+}
+
+// objectives: 1.1.3, 1.1.4
+::final-readiness-set-Q3:: (Match each situation to the cloud model that fits best\: public, private, hybrid, multicloud.) {
+    =A government department requires resources dedicated to itself with complete control of security -> private
+    =An insurer keeps its policy database on dedicated infrastructure and runs its quote calculator in a provider's cloud, connected together -> hybrid
+    =A media startup runs entirely on services bought from one cloud provider -> public
+    =A bank runs workloads with two separate public cloud providers and manages security in both -> multicloud
+}
+
+// objectives: 1.1.5
+::final-readiness-set-Q4:: Which statement best explains why cloud spending is classified as an operating expense? {
+    ~Cloud resources depreciate over five years
+    =You pay for services as you consume them rather than purchasing infrastructure up front
+    ~Cloud providers invoice annually
+    ~Cloud resources cannot be capitalized because they are virtual
+}
+
+// objectives: 1.1.6
+::final-readiness-set-Q5:: A team has two workloads\: a steady production API that will run for three years on a known VM size, and an overnight batch job that can be interrupted and restarted. Which pricing approach suits each? {
+    ~Spot for the API; reservation for the batch job
+    =Reservation for the API; spot for the batch job
+    ~Pay-as-you-go for both
+    ~Savings plan for the API; reservation for the batch job
+}
+
+// objectives: 1.1.7
+::final-readiness-set-Q6:: Which requirement most clearly points to a serverless service? {
+    ~The workload needs a specific Linux kernel version
+    =Work arrives unpredictably as messages and each unit finishes in seconds
+    ~Users need a full managed Windows desktop
+    ~The workload requires a dedicated physical host
+}
+
+// objectives: 1.2.1
+::final-readiness-set-Q7:: An application adds instances during a sale and removes them afterward, and separately the team increases the RAM on its database server. Which two scaling types are in use, in that order? {
+    ~Vertical, then horizontal
+    =Horizontal, then vertical
+    ~Both horizontal
+    ~Both vertical
+}
+
+// objectives: 1.2.2
+::final-readiness-set-Q8:: Which statement describes cost predictability as a cloud benefit? {
+    ~Costs never change once resources are deployed
+    =You can track usage in real time, analyze patterns, and forecast future spend, including with the pricing calculator
+    ~All Azure services cost the same in every region
+    ~Costs are fixed by a service-level agreement
+}
+
+// objectives: 1.2.3
+::final-readiness-set-Q9:: An organization wants deployments to consistently meet its technical standards, and wants to be alerted when a deployed resource drifts out of compliance with its baseline. Which cloud benefit category does this describe? {
+    ~Scalability
+    =Security and governance
+    ~Manageability in the cloud
+    ~Elasticity
+}
+
+// objectives: 1.2.4
+::final-readiness-set-Q10:: Which list contains only management of the cloud capabilities? {
+    ~Azure portal, Azure CLI, REST APIs
+    =Autoscaling deployments, template-based deployment, automatic replacement of failing resources, metric-based alerts
+    ~Purchasing subscriptions, assigning licenses
+    ~Writing application code, running tests
+}
+
+// objectives: 1.3.1, 1.3.2
+::final-readiness-set-Q11:: A team wants a managed platform with built-in scalability and multitenancy so developers write less infrastructure code, but they still own and deploy the application. A second team needs full control of the operating system for a lift-and-shift migration. Which service types fit, in that order? {
+    ~IaaS, then PaaS
+    =PaaS, then IaaS
+    ~SaaS, then PaaS
+    ~PaaS, then SaaS
+}
+
+// objectives: 1.3.3, 1.3.4
+::final-readiness-set-Q12:: (Match each purchase to the cloud service type\: IaaS, PaaS, or SaaS.) \#\#\# Domain 2 — Describe Azure architecture and services (Q13–Q30) {
+    =A subscription to a hosted expense-tracking application used by the finance team as-is -> SaaS
+    =Virtual machines the customer patches and configures -> IaaS
+    =A managed analytics and business intelligence service the customer points at its own data -> PaaS
+    =A messaging and email product delivered ready to use -> SaaS
+}
+
+// objectives: 2.1.1
+::final-readiness-set-Q13:: A workload must remain available if an entire Azure region becomes unavailable, and data must stay within the same geography for compliance. Which capability is designed for this? {
+    ~Availability zones
+    =Region pairs
+    ~Availability sets
+    ~Resource groups
+}
+
+// objectives: 2.1.2, 2.1.3
+::final-readiness-set-Q14i:: An availability-zone-enabled region contains a minimum of three separate availability zones. {T}
+
+::final-readiness-set-Q14ii:: Customers choose which individual datacenter within a region their resources are deployed to. {F}
+
+::final-readiness-set-Q14iii:: Availability zones within a region have independent power, cooling, and networking. {T}
+
+// objectives: 2.1.4, 2.1.5
+::final-readiness-set-Q15:: A company wants development and production workloads billed separately, with different access policies, and wants each project's resources grouped so that all of a project's resources can be deleted together. Which two constructs does this describe, in order? {
+    ~Management groups, then subscriptions
+    =Subscriptions, then resource groups
+    ~Resource groups, then tags
+    ~Tags, then subscriptions
+}
+
+// objectives: 2.1.6, 2.1.7
+::final-readiness-set-Q16:: An organization with 30 subscriptions must apply one governance rule and one role assignment that reach every subscription and every resource beneath them, without repeating the assignment. Where should these be applied, and what makes it work? {
+    ~On each subscription, because assignments cannot be made higher
+    =At a management group, because subscriptions and their contents inherit its conditions
+    ~On a resource group, because resource groups can contain subscriptions
+    ~In Microsoft Entra ID, because identity governs resource configuration
+}
+
+// objectives: 2.2.1
+::final-readiness-set-Q17:: Which option describes the compute choice that requires no operating system management by the customer and runs code only when an event triggers it? {
+    ~Azure Virtual Machines
+    ~Azure Container Instances
+    =Azure Functions
+    ~Azure Virtual Desktop
+}
+
+// objectives: 2.2.2
+::final-readiness-set-Q18:: A retailer needs identical, load-balanced virtual machines whose count rises and falls with demand, and separately needs to protect a pair of legacy VMs from a single rack or planned-maintenance failure within one region. Which two options fit, in order? {
+    ~Availability set, then virtual machine scale set
+    =Virtual machine scale set, then availability set
+    ~Azure Virtual Desktop, then availability set
+    ~Virtual machine scale set, then region pair
+}
+
+// objectives: 2.2.3
+::final-readiness-set-Q19:: Which statement about virtual machine provisioning is correct? {
+    ~Disks and networking are created automatically and cannot be chosen
+    =You choose the size (family, vCPU, RAM), storage disks, and networking such as the virtual network, network interface, and optionally a public IP
+    ~VM size cannot be changed after creation under any circumstances
+    ~A VM must be deployed to a specific datacenter
+}
+
+// objectives: 2.2.4
+::final-readiness-set-Q20:: Which requirement is best served by Azure App Service rather than by virtual machines or containers? {
+    ~Running a legacy application that requires a specific OS build and custom drivers
+    =Hosting a web app and REST API with automatic scaling and Git-based deployment, without managing an operating system
+    ~Orchestrating a fleet of containers across many nodes
+    ~Delivering managed Windows desktops to remote workers
+}
+
+// objectives: 2.2.5
+::final-readiness-set-Q21:: Which statements about Azure virtual networks are correct? (Select all that apply.) {
+    ~%25.0%A virtual network can be divided into subnets
+    ~%25.0%Network security groups can allow or block traffic based on source, destination, port, and protocol
+    ~%-100%Virtual network peering routes traffic between peered networks over the public internet
+    ~%25.0%Peered virtual networks can be in different regions
+    ~%25.0%Azure routes traffic between subnets in a virtual network by default
+}
+
+// objectives: 2.2.5, 2.2.6
+::final-readiness-set-Q22:: (Match each requirement to the correct option\: site-to-site VPN, point-to-site VPN, ExpressRoute, Azure DNS, private endpoint.) {
+    =A remote worker's laptop needs an encrypted connection into a virtual network -> point-to-site VPN
+    =A datacenter needs private connectivity to Azure that does not use the public internet -> ExpressRoute
+    =A storage account must be reachable only from inside a virtual network, using a private IP from its address space -> private endpoint
+    =An on-premises network gateway needs an encrypted tunnel to an Azure virtual network over the internet -> site-to-site VPN
+    =A team needs to host DNS records for its domain using the same credentials and billing as its other Azure services -> Azure DNS
+}
+
+// objectives: 2.2.6
+::final-readiness-set-Q23:: Which statement about endpoints is correct? {
+    ~A private endpoint has a public IP address but restricts access with a firewall rule
+    =A public endpoint has a public IP address and can be accessed from anywhere in the world
+    ~Public and private endpoints are two names for the same feature
+    ~Private endpoints can only be used with virtual machines
+}
+
+// objectives: 2.3.1
+::final-readiness-set-Q24:: (Match each requirement to the Azure Storage service\: Blob Storage, Azure Files, Queue Storage, Azure Disk Storage, Table Storage.) {
+    =Block-level volume attached to a virtual machine -> Azure Disk Storage
+    =NoSQL store for large amounts of structured, non-relational data -> Table Storage
+    =Object store for unstructured media and backup data -> Blob Storage
+    =Messages held for asynchronous processing between application components -> Queue Storage
+    =Managed share mountable over SMB or NFS by multiple clients at once -> Azure Files
+}
+
+// objectives: 2.3.2
+::final-readiness-set-Q25:: Data must be retained for seven years, is accessed roughly twice a year, must be immediately readable when accessed, and cost should be as low as possible given that constraint. Which access tier fits? {
+    ~Hot
+    =Cool or cold
+    ~Archive
+    ~Premium page blobs
+}
+
+// objectives: 2.3.3
+::final-readiness-set-Q26:: Which statement about Azure Storage redundancy is correct? {
+    ~LRS replicates data across three availability zones in the primary region
+    =ZRS replicates data synchronously across three availability zones in the primary region
+    ~GRS keeps all copies within a single datacenter
+    ~Secondary-region data is readable by default with GRS, before any failover
+}
+
+// objectives: 2.3.4
+::final-readiness-set-Q27:: A workload needs Azure Files shares accessible over both SMB and NFS, with high performance. Which storage account type is required? {
+    ~Standard general-purpose v2
+    ~Premium block blobs
+    =Premium file shares
+    ~Premium page blobs
+}
+
+// objectives: 2.3.5, 2.3.6
+::final-readiness-set-Q28:: An organization must move 70 TB into Azure over a constrained network link, and separately needs a repeatable command-line way to copy and one-way synchronize blobs between two storage accounts. Which two tools fit, in order? {
+    ~AzCopy, then Azure Data Box
+    =Azure Data Box, then AzCopy
+    ~Azure File Sync, then Azure Storage Explorer
+    ~Azure Migrate, then Azure File Sync
+}
+
+// objectives: 2.4.1, 2.4.2
+::final-readiness-set-Q29i:: Microsoft Entra ID is the cloud-based identity and access management service, and Microsoft Entra Connect synchronizes identities from on-premises Active Directory. {T}
+
+::final-readiness-set-Q29ii:: Microsoft Entra Domain Services requires you to deploy and patch your own domain controllers in Azure. {F}
+
+::final-readiness-set-Q29iii:: Single sign-on lets one identity access multiple applications, and its security depends on the strength of the initial authentication. {T}
+
+::final-readiness-set-Q29iv:: Windows Hello for Business, the Microsoft Authenticator app, and FIDO2 security keys are passwordless options. {T}
+
+// objectives: 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8
+::final-readiness-set-Q30i:: B2B collaboration represents external users in your directory, typically as guests. {T}
+
+::final-readiness-set-Q30ii:: Conditional Access can require multifactor authentication only for sign-ins from unexpected locations, while allowing known locations without a second factor. {T}
+
+::final-readiness-set-Q30iii:: Azure RBAC permissions assigned at a management group are inherited by subscriptions, resource groups, and resources beneath it. {T}
+
+::final-readiness-set-Q30iv:: Zero Trust assumes the internal network is inherently trustworthy. {F}
+
+::final-readiness-set-Q30v:: In defense in depth, the data layer is at the center and every other layer exists to protect it. {T}
+
+::final-readiness-set-Q30vi:: Microsoft Defender for Cloud calculates a secure score and can extend protection to AWS and GCP resources. {T}
+
+// objectives: 3.1.1
+::final-readiness-set-Q31:: Which factors increase what a deployed workload costs in Azure? (Select all that apply.) {
+    ~%25.0%Choosing a region with higher local power and labor costs
+    ~%25.0%Leaving disks and public IP addresses in place after deleting their virtual machine
+    ~%-100%Applying more tags to the resources
+    ~%25.0%Transferring data out of Azure datacenters across billing zones
+    ~%25.0%Purchasing a third-party solution through Azure Marketplace
+}
+
+// objectives: 3.1.2
+::final-readiness-set-Q32:: A team must produce a cost estimate for a proposed design, comparing two regions, before anything is deployed. Which tool fits, and what is its key limitation? {
+    ~Cost analysis; it only shows spend that has already occurred
+    =The pricing calculator; it produces estimates only and provisions nothing
+    ~Azure Advisor; it only reviews resources that already exist
+    ~Azure Monitor; it reports telemetry rather than cost
+}
+
+// objectives: 3.1.3
+::final-readiness-set-Q33:: Which capability shows accumulated Azure costs over time, broken down by subscription, resource group, or service, to identify spending trends? {
+    ~The pricing calculator
+    =Microsoft Cost Management cost analysis
+    ~Azure Service Health
+    ~Resource locks
+}
+
+// objectives: 3.1.4
+::final-readiness-set-Q34:: An organization needs monthly spend reported by internal cost center and by environment, and wants the required metadata to be reapplied automatically if someone removes it. What combination achieves this? {
+    ~Resource locks plus RBAC
+    =Tags plus Azure Policy enforcement
+    ~Management groups plus budgets
+    ~Purview plus Advisor
+}
+
+// objectives: 3.2.1
+::final-readiness-set-Q35:: Which requirement is Microsoft Purview designed to address? {
+    ~Restricting which regions resources may be deployed to
+    =Discovering and classifying sensitive data across on-premises, multicloud, and SaaS data, with end-to-end lineage
+    ~Detecting brute-force attacks against virtual machines
+    ~Estimating the monthly cost of a proposed architecture
+}
+
+// objectives: 3.2.2
+::final-readiness-set-Q36:: Which statements about Azure Policy are correct? (Select all that apply.) {
+    ~%25.0%It can prevent noncompliant resources from being created
+    ~%25.0%It evaluates resources that existed before the policy was assigned
+    ~%25.0%It groups related policy definitions into initiatives
+    ~%-100%It determines which users may perform actions on a resource
+    ~%25.0%It can remediate some noncompliant configurations automatically
+}
+
+// objectives: 3.2.3
+::final-readiness-set-Q37:: A production resource group must be protected so that nobody — including subscription owners — can delete it accidentally, while engineers can still update the resources inside. What is applied, and what is the consequence for an owner who needs to delete it later? {
+    ~A ReadOnly lock; the owner can delete after re-authenticating
+    =A Delete lock; the owner must remove the lock first, because locks apply regardless of RBAC
+    ~An Azure Policy deny assignment; the owner must request an exception
+    ~The Reader role for all users; the owner is unaffected
+}
+
+// objectives: 3.3.1, 3.3.2
+::final-readiness-set-Q38:: Which statement about the ways to interact with Azure is correct? {
+    ~The Azure CLI and Azure PowerShell differ in capability, with the CLI limited to read operations
+    =Azure Cloud Shell is browser-based, already authenticated to your credentials, and supports both Azure PowerShell and the Azure CLI
+    ~The Azure portal requires local installation on Windows
+    ~Only the portal communicates with Azure Resource Manager
+}
+
+// objectives: 3.3.3
+::final-readiness-set-Q39:: An enterprise runs servers in its own datacenter and Kubernetes clusters in another public cloud, and wants to apply Azure Policy and inventory tracking to all of it from Azure. Which service enables this? {
+    ~Azure Migrate
+    =Azure Arc
+    ~Azure Virtual Desktop
+    ~Azure Data Box
+}
+
+// objectives: 3.3.4
+::final-readiness-set-Q40:: Which statement best describes infrastructure as code? {
+    ~Storing infrastructure diagrams alongside application source code
+    =Defining and provisioning infrastructure through code and templates instead of manual configuration, so deployments are repeatable and reviewable
+    ~Writing application code that scales automatically
+    ~Running scripted health checks against production resources
+}
+
+// objectives: 3.3.5
+::final-readiness-set-Q41:: Which statements about Azure Resource Manager and ARM templates are correct? (Select all that apply.) {
+    ~%25.0%Every request from the portal, CLI, PowerShell, SDKs, and APIs passes through Resource Manager
+    ~%25.0%Resource Manager authenticates and authorizes requests before passing them to the target service
+    ~%25.0%ARM templates use declarative JSON to describe the desired resources
+    ~%-100%ARM templates require you to specify the deployment order of every resource manually
+    ~%25.0%The same template can be redeployed to produce a consistent result
+}
+
+// objectives: 3.4.1
+::final-readiness-set-Q42:: A team wants a prioritized list of suggested improvements to its existing Azure environment across reliability, security, performance, operational excellence, and cost. Which service provides this? {
+    =Azure Advisor
+    ~Azure Service Health
+    ~Azure Monitor
+    ~Microsoft Purview
+}
+
+// objectives: 3.4.2
+::final-readiness-set-Q43:: An engineer needs to know whether a specific virtual machine's current problem originates with Azure or with their own configuration. Which view answers that? {
+    ~Azure Status
+    ~Service Health
+    =Resource Health
+    ~Azure Advisor
+}
+
+// objectives: 3.4.3
+::final-readiness-set-Q44:: (Match each need to the Azure Monitor capability\: Log Analytics, Azure Monitor alerts, Application Insights.) {
+    =Notify an on-call group when a metric threshold is breached -> Azure Monitor alerts
+    =Query collected log data to investigate a pattern of errors -> Log Analytics
+    =Monitor a web application's response times, failure rates, and dependency calls, with availability tests -> Application Insights
+}
+
+// objectives: 3.1.3, 3.4.1
+::final-readiness-set-Q45:: A team is told their Azure bill is too high. They want both a report of where the money actually went last month and a list of Azure-generated recommendations for reducing spend. Which two tools should they use, in order? {
+    ~The pricing calculator, then Azure Monitor
+    =Microsoft Cost Management cost analysis, then Azure Advisor
+    ~Azure Advisor, then resource locks
+    ~Azure Service Health, then Microsoft Purview
+}

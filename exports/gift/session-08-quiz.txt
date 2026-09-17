@@ -1,0 +1,101 @@
+// Session 8 Quiz — Azure Cost Management
+// Generated from quizzes/session-08-quiz.md by tools/export-quizzes.py
+// GIFT format. Import into Moodle: Question bank > Import > GIFT format.
+
+// objectives: 3.1.1
+::S08-Q1:: Which of these affect what an Azure resource costs? (Select all that apply.) {
+    ~%25.0%The resource type and the settings chosen for it
+    ~%25.0%The region where the resource is deployed
+    ~%-100%The number of tags applied to the resource
+    ~%25.0%The subscription type, which may include usage allowances
+    ~%25.0%Third-party charges for solutions purchased through Azure Marketplace
+}
+
+// objectives: 3.1.1
+::S08-Q2:: A team provisions a virtual machine, then deletes the VM but leaves its disks, network interface, and public IP address in place. What is the cost consequence? {
+    ~None; dependent resources are always deleted with the VM
+    =The leftover resources continue to incur charges until they are removed
+    ~The resources are billed at half rate while unattached
+    ~Azure automatically deletes unattached resources after 24 hours
+}
+
+// objectives: 3.1.1
+::S08-Q3:: Moving data out of an Azure datacenter is priced using which concept? {
+    ~Availability zones
+    =Billing zones, which are geographical groupings of regions used for data-transfer pricing
+    ~Region pairs
+    ~Management groups
+}
+
+// objectives: 3.1.2
+::S08-Q4:: Which statement about the Azure pricing calculator is correct? {
+    ~Adding resources to the calculator provisions them in your subscription
+    =It produces an estimate only, and nothing is provisioned or charged
+    ~It reports your actual spend for the current billing cycle
+    ~It replaced Microsoft Cost Management
+}
+
+// objectives: 3.1.2
+::S08-Q5:: A team wants to compare the monthly estimated cost of the same three-tier design in two different regions before deploying anything. Which tool should they use? {
+    ~Microsoft Cost Management cost analysis
+    =The Azure pricing calculator
+    ~Azure Advisor
+    ~Azure Monitor
+}
+
+// objectives: 3.1.3
+::S08-Q6:: Which feature of Microsoft Cost Management lets you view accumulated costs broken down by subscription, resource group, or service to find where spend is accruing? {
+    =Cost analysis
+    ~Budget alerts
+    ~Resource locks
+    ~Azure Policy compliance state
+}
+
+// objectives: 3.1.3
+::S08-Q7:: Which statements about budgets and cost alerts are correct? (Select all that apply.) {
+    ~%25.0%A budget can be scoped to a subscription, resource group, or service type
+    ~%-100%Setting a budget automatically stops all spending when the limit is reached
+    ~%25.0%Budget alerts notify recipients when spending crosses a threshold you define
+    ~%25.0%Budgets can trigger automation that suspends or modifies resources at a threshold
+    ~%25.0%Credit alerts and department spending quota alerts are both types of cost alert
+}
+
+// objectives: 3.1.4
+::S08-Q8:: Which statement about resource tags is correct? {
+    ~Resources inherit tags from their resource group and subscription automatically
+    =Tags are name and value pairs that are not inherited, and Azure Policy can enforce required tags
+    ~Tags can only be applied through the Azure portal
+    ~Every resource must carry the same set of tags
+}
+
+// objectives: 3.1.4
+::S08-Q9:: An organization wants monthly cost reports broken down by internal cost center and by environment. What is the prerequisite? {
+    ~A separate subscription per cost center
+    =A consistent tagging strategy applied to the resources
+    ~A resource lock on each resource group
+    ~Read access to the pricing calculator
+}
+
+// objectives: 1.1.6
+::S08-Q10:: A workload runs a predictable, constant compute load and the team can commit financially for three years, but wants flexibility in which VM series it uses over that period. Which option fits best? {
+    ~A reservation for a specific VM size
+    =Azure savings plan for compute
+    ~Azure Spot Virtual Machines
+    ~Pay-as-you-go
+}
+
+// objectives: 2.3.2
+::S08-Q11:: Storage costs need to come down for a dataset that is accessed a few times a year but must remain immediately readable. Which change is most appropriate? {
+    ~Move the data to the archive tier
+    =Move the data to the cool or cold tier
+    ~Change redundancy from GZRS to LRS and keep the hot tier
+    ~Delete the data and re-upload when needed
+}
+
+// objectives: 2.4.5
+::S08-Q12:: A finance analyst must review cost data for a subscription but must not be able to change any resources. Which approach follows least privilege? {
+    ~Assign Owner at the subscription scope
+    ~Assign Contributor at the subscription scope
+    =Assign a read-level role at the subscription scope
+    ~Apply a ReadOnly resource lock to every resource group
+}
