@@ -250,6 +250,97 @@ its topics are no longer exam scope.
 
 ---
 
+## Verification pass 2 — findings while writing the quiz bank
+
+Every objective needed unit-level detail before items could be written, so all remaining
+units were read. These findings came out of that pass.
+
+### V13 — Azure free account: two different always-free figures on Microsoft Learn
+
+**Sources:** [Get started with Azure accounts](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/3-get-started-azure-accounts) · [Describe factors that can affect costs in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/2-describe-factors-affect-costs-azure)
+
+The accounts unit describes the Azure free account as free access to popular products for
+12 months, a credit to use in the first 30 days, and access to **more than 65** services
+that are always free. The cost-factors unit describes the same offer as access to more than
+**25** products that are always free. Both are current Microsoft Learn pages in the same
+course.
+
+This sharpens **V9**: the inconsistency is not just in phrasing, it is a specific numeric
+disagreement.
+
+**Status: NEEDS VERIFICATION.** No free-account figure is stated anywhere in this
+curriculum or quiz bank. Instructors confirm current terms on the
+[Azure free account page](https://azure.microsoft.com/en-us/free/) at cohort start.
+
+The accounts unit also documents an **Azure free student account** — free access to certain
+services for 12 months, a $100 credit, free developer tools, and no credit card required.
+That is useful for cohorts in education settings and is recorded here as an enrollment
+option, not as exam content.
+
+### V14 — Bicep is now in the official module
+
+**Source:** [Describe Azure Resource Manager and Azure ARM templates](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates)
+
+The unit teaches infrastructure as code, ARM templates in JSON, **and Bicep** as a
+declarative language for deploying Azure resources through ARM. Bicep is not named in the
+July 20, 2026 skills measured.
+
+**Result:** gap G8 in the objective map was updated. Bicep is taught in Session 10 as
+current practice, labeled context, and excluded from the quiz bank. This is consistent with
+the treatment of Copilot in Azure (**V7**).
+
+### V15 — Service level agreements are referenced in module content
+
+**Sources:** [Describe the benefits of high availability and scalability](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/2-high-availability-scalability-cloud) · [Describe the purpose of tags](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags)
+
+SLAs are not a bulleted objective, but the high-availability unit refers to Azure uptime
+guarantees as part of SLAs, and the tags unit mentions grouping resources by operational
+criticality to help formulate SLAs.
+
+**Result:** the earlier statement that SLAs are "not in the current skills measured" stands
+for exam scope, but it is worth knowing that the official content still touches them.
+Instructors may explain what an SLA is when the term appears; SLA detail — uptime
+percentages, composite SLA arithmetic — remains out of scope and out of the quiz bank. That
+kind of detail is what the secondary references over-weight (**C10**).
+
+### V16 — Specifics confirmed for item writing
+
+Verified so that quiz items and distractors are accurate rather than plausible-sounding:
+
+| Detail | Finding | Source |
+| --- | --- | --- |
+| Azure Advisor categories | Five: Reliability, Security, Performance, Operational Excellence, Cost | [Azure Advisor unit](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/2-describe-purpose-of-azure-advisor) |
+| Azure Service Health structure | Three views: Azure Status (global), Service Health (your services and regions), Resource Health (individual resource) | [Service Health unit](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health) |
+| Resource lock types | **Delete** and **ReadOnly** in the module's wording; the Delete lock appears as `CanNotDelete` in the API and some tooling. Locks apply regardless of RBAC, so even an Owner must remove the lock first | [Resource locks unit](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks) |
+| Cost alert types | Three: budget alerts, credit alerts, department spending quota alerts. Budgets can trigger automation | [Cost Management unit](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool) |
+| Tag inheritance | Tags are **not** inherited from subscriptions or resource groups; Azure Policy can require them and reapply removed ones | [Tags unit](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags) |
+| Passwordless options | Three: Windows Hello for Business, Microsoft Authenticator app, FIDO2 security keys | [Authentication methods unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/3-authentication-methods) |
+| Azure RBAC model | **Allow** model; permissions from multiple assignments combine; enforced through Azure Resource Manager; does not reach application or data level | [RBAC unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/6-role-based-access-control) |
+| Defense-in-depth layers | Seven: physical security, identity and access, perimeter, network, compute, application, data | [Defense in depth unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth) |
+| Storage account types | Standard general-purpose v2 (recommended for most scenarios), premium block blobs, premium file shares (required for NFS file shares), premium page blobs. Names are 3–24 characters, lowercase letters and numbers, globally unique | [Storage accounts unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/2-accounts) |
+| Storage redundancy | LRS three copies in one datacenter; ZRS three availability zones; GRS uses LRS in both regions; GZRS uses ZRS primary plus LRS secondary; secondary is not readable before failover without the RA- variants | [Redundancy unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/3-redundancy) |
+| Azure Data Box | Maximum usable capacity of 80 TB per device | [Data migration unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/6-identify-azure-data-migration-options) |
+| AzCopy synchronization | One direction only; it does not synchronize bidirectionally. Azure File Sync is the bidirectional option, with cloud tiering | [File movement unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/7-identify-azure-file-movement-options) |
+| Azure VPN Gateway | One VPN gateway per virtual network, though one gateway can serve multiple locations; default deployment is two instances active/standby; can act as ExpressRoute failover | [VPN unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/3-virtual-private-networks) |
+| ExpressRoute caveat | Traffic bypasses the public internet, but DNS queries, certificate revocation list checks, and CDN requests still traverse it | [ExpressRoute unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute) |
+| Azure DNS limitation | You cannot buy a domain name in Azure DNS; purchase through App Service domains or a registrar, then host the records in Azure DNS | [Azure DNS unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/5-domain-name-system) |
+| Azure Arc scope | Manages servers, Kubernetes clusters, Azure data services, SQL Server, and virtual machines (preview) outside Azure | [Azure Arc unit](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc) |
+| Container services named | Azure Container Instances, Azure Container Apps, Azure Kubernetes Service | [Containers unit](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/5-containers) |
+
+### V17 — Quiz bank sourcing rules applied
+
+No item in [`../quizzes/`](../quizzes/) is derived from either secondary GitHub reference,
+from any exam dump, or from recalled exam content. Every answer-key row cites the Microsoft
+Learn unit or Azure documentation page that establishes the answer, and every item maps to
+an objective ID from the study guide. Context-only topics (**V7**, **V14**, and the
+objective map's context list) are excluded from scoring entirely.
+
+The two GitHub repositories remain listed as optional learner resources with the caveats in
+**V11** and **V12**. They are not treated as authorities for any statement in this
+repository.
+
+---
+
 ## Consolidated: outdated terms and topics
 
 Do **not** present any of these as current. Learners will meet all of them in third-party
@@ -295,9 +386,9 @@ Marketplace as a standalone topic · the TCO calculator.
 | --- | --- | --- | --- |
 | N1 | AZ-900 question count | Microsoft publishes only a general 40–60 range for most exams and says counts vary and change | Never state a count to learners; describe the 45-minute duration instead |
 | N2 | Official course length: 1 day vs 24 hours | The AZ-900T00 course page and the Learn catalog record disagree (V8) | Keep the 24-hour plan; recheck the course page before publishing marketing copy |
-| N3 | Azure free account terms | Microsoft Learn pages describe the offer inconsistently and the offer changes (V9) | Confirm on the Azure free account page at each cohort start; state no specifics in materials |
-| N4 | Examinability of context-only module topics | Sustainability, encryption and key management, Service Trust Portal, AI/ML/IoT, cost optimization, Copilot in Azure appear in modules but not in the bulleted objectives; the study guide allows related topics | Teach briefly as context, exclude from the quiz bank, revisit if a future revision adds them |
-| N5 | Current storage account types and performance tiers | The fundamentals module does not enumerate account kinds; this list changes over time (gap G5) | Read the storage account overview doc before teaching Session 6 |
+| N3 | Azure free account terms | Microsoft Learn pages describe the offer inconsistently — one unit says more than 65 always-free services, another says more than 25 — and the offer changes (V9, V13) | Confirm on the Azure free account page at each cohort start; state no specifics in materials |
+| N4 | Examinability of context-only module topics | Sustainability, encryption and key management, Service Trust Portal, AI/ML/IoT, cost optimization, Copilot in Azure, and Bicep appear in modules but not in the bulleted objectives; the study guide allows related topics | Teach briefly as context, exclude from the quiz bank, revisit if a future revision adds them |
+| N5 | Current storage account types and performance tiers | Resolved for now: the storage accounts unit does enumerate the four account types and their supported redundancy options (**V16**). The list still changes over time | Re-read the storage accounts unit and the storage account overview doc before each cohort's Session 6 |
 | N6 | Whether availability sets are on a deprecation path | The VM unit expresses a preference for zone-based designs but announces no retirement | Do not tell learners availability sets are deprecated; teach the stated preference only |
 | N7 | Practice assessment scoring and item count | Microsoft does not publish the practice assessment's length or how its score relates to the exam | Use the 85% two-attempt readiness bar as a course convention, not as a Microsoft claim |
 
@@ -313,5 +404,6 @@ Run this before each cohort, and immediately if Microsoft announces an AZ-900 up
 4. Re-open the modules for any skill area marked changed, and update the affected session in [`../curriculum/six-week-plan.md`](../curriculum/six-week-plan.md).
 5. Re-check the terminology table in this log against the current module units.
 6. Re-check every item in the NEEDS VERIFICATION table; resolve what can now be resolved.
-7. Re-check all links in [`microsoft-learn-links.md`](./microsoft-learn-links.md) for redirects and dead pages.
-8. Append findings to this log rather than overwriting it, so the trail of what changed and when stays intact.
+7. Re-check all links in [`microsoft-learn-links.md`](./microsoft-learn-links.md) for redirects and dead pages, including the unit links in the quiz answer keys.
+8. Re-check the quiz bank against any changed objective: retire items whose objective was removed, and add items for new objectives. Regenerate [`../quizzes/coverage-matrix.md`](../quizzes/coverage-matrix.md) afterward.
+9. Append findings to this log rather than overwriting it, so the trail of what changed and when stays intact.

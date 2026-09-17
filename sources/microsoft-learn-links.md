@@ -90,6 +90,11 @@ under one skill ("Describe Azure compute and networking services").
 | [Manage Azure resources with Cloud Shell and the Azure CLI](https://learn.microsoft.com/en-us/training/modules/guided-project-manage-resources-cloud-shell-cli/) | S10 |
 | [Monitor Azure with Service Health and Activity Log alerts](https://learn.microsoft.com/en-us/training/modules/guided-project-monitor-service-health-activity-alerts/) | S11 |
 
+All 12 content modules have now had every content unit read and cited; the unit links used
+by the quiz answer keys in [`../quizzes/`](../quizzes/) come from that pass. The table
+below lists the units checked in Phase 1 and why; the Phase 2 additions are recorded in
+[`source-validation-log.md`](./source-validation-log.md) under V16.
+
 ## Unit-level links verified in Phase 1
 
 These specific units were read to confirm objective coverage and current terminology.

@@ -3,12 +3,13 @@
 **Time:** 15 minutes · **Items:** 12
 **Composition:** 6 new (monitoring), 3 Domain 3 checkpoint (3.1–3.3), 3 mixed review (S1–S7)
 **Objectives:** 3.4.1, 3.4.2, 3.4.3
-**Checkpoint objectives:** 3.1.3, 3.2.2, 3.3.5
+**Checkpoint objectives:** all of 3.1.1–3.3.5, via three multi-part items
 **Mixed review objectives:** 1.1.2, 2.2.5, 2.4.6
 **Target:** 80%
 
-This quiz doubles as the Domain 3 checkpoint. Objectives 3.1–3.3 were each quizzed in their
-own session; the checkpoint items here confirm they held.
+This quiz doubles as the Domain 3 checkpoint. Items 7–9 are multi-part by design: together
+they sweep all twelve objectives from Sessions 8, 9, and 10 in three items, the same
+technique the Domain 1 and Domain 2 checkpoints use.
 
 ---
 
@@ -56,26 +57,27 @@ own session; the checkpoint items here confirm they held.
 - ii. Be notified when a virtual machine's CPU stays above 80 percent, with the notification routed to an on-call group
 - iii. Track a web application's request rates, response times, failure rates, and dependency calls
 
-**7.** *(Domain 3 checkpoint)* Which tool shows where Azure spend has already accrued, broken down by subscription, resource group, or service?
+**7.** *(Domain 3 checkpoint — cost management.)* (Match each need to the right capability: the pricing calculator, Microsoft Cost Management cost analysis, budgets with alerts, tags.)
 
-- A. The Azure pricing calculator
-- B. Microsoft Cost Management cost analysis
-- C. Azure Advisor
-- D. Azure Service Health
+- i. Estimate what a proposed design will cost in two candidate regions before deploying it
+- ii. See where spend has already accrued, broken down by subscription, resource group, or service
+- iii. Be notified when spending crosses a defined threshold, and optionally trigger automation
+- iv. Attach the metadata that makes cost reports answer "which cost center" and "which environment"
 
-**8.** *(Domain 3 checkpoint)* A standard requires that no storage account be created outside two approved regions. Which service enforces it?
+**8.** *(Domain 3 checkpoint — governance and compliance.)* (For each statement, answer yes or no.)
 
-- A. Azure Policy
-- B. Resource locks
-- C. Azure RBAC
-- D. Microsoft Purview
+- i. Azure Policy can prevent a noncompliant resource from being created, and also evaluates resources that already existed.
+- ii. A Delete lock allows authorized users to read and update a resource but not delete it.
+- iii. Microsoft Purview's purpose is to discover and classify data across your estate and trace its lineage.
+- iv. A subscription Owner can delete a resource that has a Delete lock applied, without removing the lock.
 
-**9.** *(Domain 3 checkpoint)* Which statement about Azure Resource Manager templates is correct?
+**9.** *(Domain 3 checkpoint — managing and deploying.)* (Match each need to the right option: Azure portal, Azure Cloud Shell, Azure Arc, infrastructure as code, ARM template.)
 
-- A. They are imperative scripts that list deployment commands in order
-- B. They are declarative JSON files describing the resources you want, which Azure validates and then deploys in dependency order
-- C. They can only be created by exporting from the Azure portal
-- D. They apply only to virtual machines
+- i. A browser-based shell, already authenticated to your credentials, supporting both Azure PowerShell and the Azure CLI
+- ii. Govern servers in your own datacenter and Kubernetes clusters in another cloud from Azure
+- iii. A declarative JSON file describing the resources to deploy, which Azure validates and orchestrates
+- iv. The practice of managing infrastructure through code and templates rather than manual configuration
+- v. A web console with custom dashboards for building, managing, and monitoring resources
 
 **10.** *(Mixed review)* For an application hosted on an IaaS virtual machine, which responsibilities are the customer's? (Select all that apply.)
 
@@ -111,13 +113,15 @@ own session; the checkpoint items here confirm they held.
 | 4 | A | 3.4.2 | Azure Status gives the global picture across all services and regions. Service Health narrows to your services; Resource Health narrows to one resource. | [Azure Service Health](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health) |
 | 5 | A | 3.4.2 | Because you are signed in, Service Health knows which services and regions matter to you and shows relevant outages, planned maintenance, and health advisories, with alerts you can configure. | [Azure Service Health](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/3-describe-azure-service-health) |
 | 6 | i–Log Analytics, ii–Azure Monitor alerts, iii–Application Insights | 3.4.3 | Log Analytics is where you write and run queries against data Azure Monitor collected; alerts fire on a condition and route notification through an action group; Application Insights monitors application performance and usage including dependencies and availability tests. Score one point per pair. | [Describe Azure Monitor](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/4-describe-azure-monitor) |
-| 7 | B | 3.1.3 | Cost analysis in Microsoft Cost Management reports actual accrued spend by billing cycle, subscription, resource group, resource, and service. The pricing calculator estimates before deployment. | [Microsoft Cost Management tool](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool) |
-| 8 | A | 3.2.2 | Restricting allowed locations is a classic Azure Policy control, and Policy can block noncompliant creation outright. Locks prevent change or deletion; RBAC governs who may act. | [Purpose of Azure Policy](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy) |
-| 9 | B | 3.3.5 | ARM templates are declarative JSON that define the desired resources; Azure validates the template and orchestrates creation in the right order, in parallel where possible. Exporting from the portal is one way to obtain a template, not the only way. | [Azure Resource Manager and ARM templates](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates) |
+| 7 | i–pricing calculator, ii–cost analysis, iii–budgets with alerts, iv–tags | 3.1.1, 3.1.2, 3.1.3, 3.1.4 | The pricing calculator estimates before deployment; cost analysis reports accrued spend; budgets alert at thresholds and can trigger automation; tags supply the metadata cost reports group by. Fractional credit. | [Explore the pricing calculator](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators) · [Cost Management tool](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/6-describe-azure-tool) · [Purpose of tags](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/7-describe-purpose-of-tags) |
+| 8 | i–yes, ii–yes, iii–yes, iv–no | 3.2.1, 3.2.2, 3.2.3 | Only iv is false: locks apply regardless of RBAC, so even an Owner must remove the lock first. Fractional credit. | [Azure Policy](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/3-describe-purpose-azure-policy) · [Resource locks](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/4-describe-purpose-resource-locks) · [Microsoft Purview](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-microsoft-purview) |
+| 9 | i–Azure Cloud Shell, ii–Azure Arc, iii–ARM template, iv–infrastructure as code, v–Azure portal | 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5 | Each option maps to exactly one need. Note the distinction between the practice (infrastructure as code) and the artifact (an ARM template). Fractional credit. | [Tools for interacting with Azure](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure) · [Azure Arc](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/3-describe-purpose-of-azure-arc) · [ARM and ARM templates](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/4-describe-azure-resource-manager-azure-arm-templates) |
 | 10 | A, C, D | 1.1.2 | On IaaS the customer owns the operating system and above, plus data and identity in every model. Physical datacenter and physical network are always the provider's. | [Shared responsibility model](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/4-describe-shared-responsibility-model) |
 | 11 | C | 2.2.5 | ExpressRoute provides private connectivity that bypasses the public internet. Both VPN types cross the internet inside an encrypted tunnel; peering connects virtual networks, not on-premises datacenters. | [Azure ExpressRoute](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/4-expressroute) |
 | 12 | B | 2.4.6 | Assume breach means limiting potential impact, segmenting access, verifying end-to-end encryption, and using analytics for visibility and detection. A is the perimeter assumption Zero Trust rejects. | [Zero Trust model](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/7-describe-zero-trust-model) |
 
-**Scoring the checkpoint:** record items 7–9 separately. Any learner missing two or three
-of them needs Domain 3 re-teaching in the Session 12 gap clinic, regardless of their total
-score on this quiz.
+**Scoring the checkpoint:** record items 7–9 separately, with fractional credit, and note
+which parts were missed. Those parts name the Domain 3 objectives that need re-teaching in
+the Session 12 gap clinic, regardless of the total score on this quiz. Every item is worth
+one point out of 12; items 2 and 10 are multi-select and all-or-nothing, and items 6–9 earn
+fractional credit.

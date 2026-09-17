@@ -16,7 +16,7 @@ published exam weights.
 | Teach block A | 25 | New objective content, instructor-led with one worked example. |
 | Teach block B | 25 | New objective content, second cluster. |
 | Practice | 30 | Portal, Cloud Shell, guided project, calculator, or structured sorting activity. |
-| Session quiz | 15 | Formative, this session's objectives only. Answers reviewed immediately. |
+| Session quiz | 15 | Formative. Mostly this session's objectives, plus a short carry-forward block from earlier sessions. Answers reviewed immediately. |
 | Wrap and assignment | 15 | Misconception cleanup, objective checklist, next-session prep. |
 
 Sessions 11 and 12 replace part of this shape with review and full-length practice; their
@@ -29,6 +29,12 @@ coverage guarantees in the objective map true.
 The warm-up samples from every earlier session listed for it in the [cumulative review
 schedule](#cumulative-review-schedule) at the end of this file. Each session's warm-up
 note names the priority items for that sitting, not the full set.
+
+Every warm-up, quiz, and checkpoint referenced below is written and ready to use in
+[`../quizzes/`](../quizzes/). Warm-up prompts are in
+[`warm-ups.md`](../quizzes/warm-ups.md); each session's quiz is its own file; the domain
+checkpoints and the final readiness set are separate files. Carry-forward composition per
+quiz is tabulated in [`../quizzes/README.md`](../quizzes/README.md).
 
 ## Deviation from the suggested sequence
 
@@ -77,7 +83,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Wrap | 0 | Folded into the quiz review. |
 
 **Practiced:** 1.1.1–1.1.5 (sorting and scenario exercises), 3.3.1 (portal tour)
-**Quizzed:** 1.1.1–1.1.5
+**Quizzed:** 1.1.1–1.1.5 — [`session-01-quiz.md`](../quizzes/session-01-quiz.md), 12 items
 **Cumulative review target for later sessions:** shared responsibility reappears in S4 and S7; cloud models in S5; consumption model in S8.
 
 **Assignment:** complete the [Describe cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/) module, including its module assessment. Create an Azure account if using the free-account path (see course overview for the no-cost fallback).
@@ -99,8 +105,8 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Session quiz | 15 | 1.1.6, 1.1.7, 1.2.1–1.2.4, 1.3.1–1.3.4. |
 
 **Practiced:** 1.1.6, 1.1.7, 1.2.1–1.2.4, 1.3.1–1.3.4
-**Quizzed:** same
-**Domain 1 checkpoint:** the S3 warm-up is extended to a 10-item Domain 1 checkpoint covering all 15 Domain 1 objectives.
+**Quizzed:** same — [`session-02-quiz.md`](../quizzes/session-02-quiz.md), 12 items (10 new, 2 carry-forward)
+**Domain 1 checkpoint:** the S3 warm-up is replaced by the 12-item Domain 1 checkpoint covering all 15 Domain 1 objectives.
 
 **Assignment:** complete [Describe the benefits of using cloud services](https://learn.microsoft.com/en-us/training/modules/describe-benefits-use-cloud-services/) and [Describe cloud service types](https://learn.microsoft.com/en-us/training/modules/describe-cloud-service-types/).
 
@@ -117,7 +123,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 
 | Block | Minutes | Content |
 | --- | --- | --- |
-| Domain 1 checkpoint | 15 | 10-item cumulative check across all Domain 1 objectives, reviewed in class. Gaps here drive the S4 and S8 warm-up choices. |
+| Domain 1 checkpoint | 15 | [`checkpoint-domain-1.md`](../quizzes/checkpoint-domain-1.md): 12 items sweeping all 15 Domain 1 objectives, reviewed in class. Gaps here drive the S4 and S5 warm-up choices. |
 | Teach A | 25 | Physical infrastructure: datacenters (2.1.3), regions (2.1.1), availability zones (2.1.2), region pairs and sovereign regions (2.1.1). Zonal vs zone-redundant vs non-regional services. |
 | Teach B | 25 | Management infrastructure: resources and resource groups (2.1.4), subscriptions as billing and access-control boundaries (2.1.5), management groups (2.1.6), and the full hierarchy with inheritance (2.1.7). |
 | Practice | 30 | (a) Vocabulary drill using the Azure global infrastructure site: for 8 statements, label each as datacenter, region, availability zone, region pair, or sovereign region (addresses gap G3). (b) In the portal or Cloud Shell, create a resource group, deploy one cheap resource into it, add a tag, and inspect the resource group blade. (c) Draw the hierarchy from tenant root group down to a resource and mark where policy and RBAC inherit. |
@@ -125,7 +131,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Wrap | 10 | Naming-convention and resource-group-strategy discussion; preview of compute. |
 
 **Practiced:** 2.1.1–2.1.7, plus 3.3.1 reinforcement
-**Quizzed:** 2.1.1–2.1.7
+**Quizzed:** 2.1.1–2.1.7 — [`session-03-quiz.md`](../quizzes/session-03-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe the core architectural components of Azure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/).
 
@@ -146,7 +152,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Session quiz | 15 | 2.2.1–2.2.4, plus two items on 1.1.7. |
 
 **Practiced:** 2.2.1–2.2.4, 1.1.7, 3.3.5
-**Quizzed:** 2.2.1–2.2.4, 1.1.7
+**Quizzed:** 2.2.1–2.2.4, 1.1.7 — [`session-04-quiz.md`](../quizzes/session-04-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe Azure compute services](https://learn.microsoft.com/en-us/training/modules/describe-azure-compute-networking-services/).
 
@@ -171,7 +177,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Session quiz | 15 | 2.2.5, 2.2.6. |
 
 **Practiced:** 2.2.5, 2.2.6, 3.3.2
-**Quizzed:** 2.2.5, 2.2.6
+**Quizzed:** 2.2.5, 2.2.6 — [`session-05-quiz.md`](../quizzes/session-05-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe Azure networking services](https://learn.microsoft.com/en-us/training/modules/describe-azure-networking-services/).
 
@@ -192,7 +198,7 @@ management and deployment, monitoring plus cumulative review, then full exam rea
 | Session quiz | 15 | 2.3.1–2.3.6. |
 
 **Practiced:** 2.3.1–2.3.6, 3.1.2
-**Quizzed:** 2.3.1–2.3.6
+**Quizzed:** 2.3.1–2.3.6 — [`session-06-quiz.md`](../quizzes/session-06-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe Azure storage services](https://learn.microsoft.com/en-us/training/modules/describe-azure-storage-services/).
 
@@ -221,8 +227,8 @@ posture) and the guided project exercises most of them at once.
 | Session quiz | 10 | 2.4.1–2.4.8. |
 
 **Practiced:** 2.4.1–2.4.8
-**Quizzed:** 2.4.1–2.4.8
-**Domain 2 checkpoint:** the S8 warm-up is extended to a 12-item Domain 2 checkpoint across 2.1–2.4.
+**Quizzed:** 2.4.1–2.4.8 — [`session-07-quiz.md`](../quizzes/session-07-quiz.md), 10 items (8 new, 2 carry-forward)
+**Domain 2 checkpoint:** the S8 warm-up is replaced by the 12-item Domain 2 checkpoint covering all of 2.1–2.4.
 
 **Assignment:** complete [Describe Azure identity, access, and security](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/).
 
@@ -235,7 +241,7 @@ posture) and the guided project exercises most of them at once.
 
 | Block | Minutes | Content |
 | --- | --- | --- |
-| Domain 2 checkpoint | 15 | 12-item cumulative check across Domain 2, reviewed in class. |
+| Domain 2 checkpoint | 15 | [`checkpoint-domain-2.md`](../quizzes/checkpoint-domain-2.md): 12 items sweeping all 27 Domain 2 objectives, reviewed in class. |
 | Teach A | 25 | Factors that affect costs (3.1.1): resource type and settings, consumption, maintenance and orphaned resources, geography and billing zones for data transfer, subscription type, Azure Marketplace third-party billing. Opens by recapping the consumption-based model (1.1.5) and what "you pay for what you use" means concretely (1.1.1), then the pricing-model second pass (1.1.6): pay-as-you-go, reservations, Azure savings plan for compute, spot. |
 | Teach B | 25 | Cost management capabilities (3.1.3): Microsoft Cost Management, cost analysis, budgets and alerts. The pricing calculator (3.1.2) and what it does and does not tell you. Tags (3.1.4) as the mechanism that makes cost reporting answer business questions. |
 | Practice | 30 | Guided project: [Set up cost guardrails in Azure](https://learn.microsoft.com/en-us/training/modules/guided-project-cost-guardrails/). Then build a three-resource monthly estimate in the pricing calculator and re-price it in a second region to quantify the geography factor (3.1.1, 3.1.2). Apply a tag set to a resource group and explain which cost question each tag answers (3.1.4). Review cost analysis views if a subscription with usage is available. |
@@ -243,7 +249,7 @@ posture) and the guided project exercises most of them at once.
 | Wrap | 10 | The retired TCO calculator: why older study material still shows it, and what the current objective actually asks. |
 
 **Practiced:** 3.1.1–3.1.4, 1.1.6
-**Quizzed:** 3.1.1–3.1.4, 1.1.6
+**Quizzed:** 3.1.1–3.1.4, 1.1.6 — [`session-08-quiz.md`](../quizzes/session-08-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe cost management in Azure](https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/).
 
@@ -262,13 +268,13 @@ posture) and the guided project exercises most of them at once.
 | --- | --- | --- |
 | Warm-up | 10 | Retrieval weighted to hierarchy and inheritance (2.1.7), RBAC scope (2.4.5), tags (3.1.4), and the security-and-governance benefit (1.2.3). Governance only makes sense on top of these. |
 | Teach A | 25 | Azure Policy (3.2.2): definitions, initiatives, assignment scope, compliance state, and how audit differs from deny. How Policy differs from RBAC — what you may do vs what a resource may look like. |
-| Teach B | 25 | Resource locks (3.2.3): CanNotDelete and ReadOnly, inheritance, and why locks stop accidental deletion but not permission problems. Microsoft Purview in Azure (3.2.1): data governance and compliance purpose, scoped to what AZ-900 asks (gap G7). Brief context note on the Service Trust Portal. |
+| Teach B | 25 | Resource locks (3.2.3): the Delete lock and the ReadOnly lock, inheritance, and why a lock stops an accidental deletion that RBAC would have permitted. Note that the Delete lock appears as `CanNotDelete` in the API and in some tooling. Microsoft Purview in Azure (3.2.1): data governance and compliance purpose, scoped to what AZ-900 asks (gap G7). Brief context note on the Service Trust Portal. |
 | Practice | 30 | Guided project: [Organize and protect resources with tags and locks](https://learn.microsoft.com/en-us/training/modules/guided-project-organize-resources-tags-locks/). Then assign a built-in audit policy at resource-group scope and read its compliance results (3.2.2); apply a CanNotDelete lock and attempt a delete to see the failure (3.2.3). Governance-tool triage: 9 requirements matched to Policy, RBAC, locks, tags, or Purview. |
 | Session quiz | 15 | 3.2.1–3.2.3. |
 | Wrap | 15 | Common confusions: Policy vs RBAC vs locks; management-group-level vs subscription-level governance. |
 
 **Practiced:** 3.2.1–3.2.3, 3.1.4
-**Quizzed:** 3.2.1–3.2.3
+**Quizzed:** 3.2.1–3.2.3 — [`session-09-quiz.md`](../quizzes/session-09-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe features and tools in Azure for governance and compliance](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-azure-for-governance-compliance/).
 
@@ -289,7 +295,7 @@ posture) and the guided project exercises most of them at once.
 | Session quiz | 15 | 3.3.1–3.3.5. |
 
 **Practiced:** 3.3.1–3.3.5
-**Quizzed:** 3.3.1–3.3.5
+**Quizzed:** 3.3.1–3.3.5 — [`session-10-quiz.md`](../quizzes/session-10-quiz.md), 12 items (9 new, 3 carry-forward)
 
 **Assignment:** complete [Describe features and tools for managing and deploying Azure resources](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/).
 
@@ -313,7 +319,7 @@ posture) and the guided project exercises most of them at once.
 | Session quiz | 15 | Doubles as the Domain 3 checkpoint: 3.4.1–3.4.3 in depth, plus mixed items spanning 3.1–3.3 and the Domain 1 and 2 review. |
 
 **Practiced:** 3.4.1–3.4.3, plus review practice across Domains 1 and 2
-**Quizzed:** 3.4.1–3.4.3, with checkpoint items across 3.1–3.3 and mixed Domain 1–2 review items
+**Quizzed:** 3.4.1–3.4.3, with checkpoint items across 3.1–3.3 and mixed Domain 1–2 review items — [`session-11-quiz.md`](../quizzes/session-11-quiz.md), 12 items
 **Domain 3 checkpoint:** this session quiz. Objectives 3.1–3.3 were each quizzed in their own session and are swept again in S12.
 
 **Assignment:** complete [Describe monitoring tools in Azure](https://learn.microsoft.com/en-us/training/modules/describe-monitoring-tools-azure/). Take the [official AZ-900 practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/practice/assessment?assessment-type=practice&assessmentId=23) once before Session 12 and bring the score-by-domain result.
@@ -327,7 +333,7 @@ posture) and the guided project exercises most of them at once.
 
 | Block | Minutes | Content |
 | --- | --- | --- |
-| Timed practice | 45 | Full-length attempt at the [official Microsoft practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/practice/assessment?assessment-type=practice&assessmentId=23) under exam conditions: 45 minutes, no notes, no discussion. Mirrors the 45-minute exam duration for Fundamentals exams. |
+| Timed practice | 45 | Full-length timed attempt under exam conditions — 45 minutes, no notes, no discussion — using either the course's own [`final-readiness-set.md`](../quizzes/final-readiness-set.md) (45 items, weight-aligned, covering all 57 objectives) or the [official Microsoft practice assessment](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-900/practice/assessment?assessment-type=practice&assessmentId=23). Learners take the official assessment as Session 11 homework, so running the course set in class gives two independent readings. Both mirror the 45-minute Fundamentals exam duration. |
 | Debrief | 30 | Score by domain, then item-by-item reasoning on every missed question. Learners log each miss against its objective ID on the objective checklist. |
 | Gap clinic | 25 | Re-teach the three weakest objectives across the cohort, chosen from the debrief data. Domain 1 items usually dominate here, which is why Session 12 carries the largest Domain 1 minute allocation. |
 | Exam logistics | 10 | Exam duration 45 minutes and seat time 65 minutes; score of 700 or greater required; proctored delivery; scheduling through Pearson VUE, or Certiport for students and educators; retake allowed 24 hours after a first failed attempt, with longer waits after that; Fundamentals certifications do not expire; Microsoft Learn is **not** available during Fundamentals exams. Walk through the [exam sandbox](https://aka.ms/examdemo) so the interface is familiar. |

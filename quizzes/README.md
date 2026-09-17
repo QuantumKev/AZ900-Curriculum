@@ -85,10 +85,15 @@ Item types used, and how to mark them:
 | Type | Marker in stem | Notes |
 | --- | --- | --- |
 | Single best answer | none | Four options, exactly one correct. The default. |
-| Multi-select | `(Select all that apply.)` | Key lists every correct option. Score all-or-nothing. |
-| Matching | `(Match each … )` | Key gives the pairs. Score per pair, then round. |
-| Ordering | `(Put … in order.)` | Used for hierarchy and layer items. Score all-or-nothing. |
-| True/false set | `(For each statement, answer yes or no.)` | Mirrors the exam's problem-solution format. Score per statement. |
+| Multi-select | `(Select all that apply.)` | Key lists every correct option. All-or-nothing. |
+| Matching | `(Match each … )` | Key gives the pairs. Fractional credit. |
+| Ordering | `(Put … in order.)` | Used for hierarchy and layer items. All-or-nothing. |
+| True/false set | `(For each statement, answer yes or no.)` | Mirrors the exam's problem-solution format. Fractional credit. |
+
+**Every item is worth exactly one point**, whatever its type. Multi-part items — matching
+and yes/no sets — earn correct parts divided by total parts. This matters most in the final
+readiness set: awarding a point per pair would inflate Domain 2, which carries most of the
+multi-part items, and break the weight alignment.
 
 ### Rules every item in this bank follows
 

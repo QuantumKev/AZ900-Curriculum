@@ -18,6 +18,7 @@ handouts are later phases. See [Status](#status) below.
 | [`curriculum/course-overview.md`](curriculum/course-overview.md) | Audience, prerequisites, outcomes, exam snapshot, instructional model, assessment strategy, hands-on environment options, the 10-day post-course readiness plan, instructor prep, accessibility, risks |
 | [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md) | All 12 sessions, block by block, with minute budgets, practice activities, quiz scope, assignments, and source links per session |
 | [`curriculum/exam-objective-map.md`](curriculum/exam-objective-map.md) | All 57 objectives with taught / practiced / quizzed / cumulatively-reviewed columns, coverage totals, time-versus-weight analysis, and the gap list |
+| [`quizzes/`](quizzes/) | The full assessment bank: warm-ups, 11 session quizzes, 2 domain checkpoints, and the timed final readiness set — 197 scored items plus 66 retrieval prompts, with answer keys, objective IDs, and sources. Start at [`quizzes/README.md`](quizzes/README.md) |
 | [`sources/microsoft-learn-links.md`](sources/microsoft-learn-links.md) | Every primary source, learning path, module, guided project, verified unit, and per-objective Azure documentation link |
 | [`sources/source-validation-log.md`](sources/source-validation-log.md) | What was verified and how, conflicts with secondary sources, outdated terminology, NEEDS VERIFICATION items, and the re-validation procedure |
 
@@ -55,10 +56,11 @@ expire. Sources for each of these facts are in
 | 6 | 12 | Full AZ-900 Exam Readiness |
 
 Every session runs the same shape: a 10-minute cumulative warm-up, two or three teaching
-blocks, 30 minutes of practice, and a 15-minute formative quiz on that session's
-objectives. Domain checkpoints land at the start of Session 3 (Domain 1), the start of
+blocks, 30 minutes of practice, and a 15-minute formative quiz — mostly on that session's
+objectives, plus a carry-forward block from earlier sessions whose range widens as the
+course proceeds. Domain checkpoints land at the start of Session 3 (Domain 1), the start of
 Session 8 (Domain 2), and inside the Session 11 quiz (Domain 3). Session 12 is a timed
-full practice pass plus a debrief and gap clinic.
+45-item readiness pass plus a debrief and gap clinic.
 
 Instructional time is allocated to match the published exam weights: 28.1% Domain 1,
 38.9% Domain 2, 33.0% Domain 3 of the 1,440 total minutes.
@@ -120,13 +122,21 @@ these IDs exist to make coverage traceable.
 | Describe Azure management and governance | 15 | 15 | 15 | 15 | 15 |
 | **Total** | **57** | **57** | **57** | **57** | **57** |
 
+Assessment coverage is verified the same way: every objective appears in at least one
+session quiz, in the checkpoint for its domain, and in the final readiness set. See
+[`quizzes/coverage-matrix.md`](quizzes/coverage-matrix.md), which is generated from the
+answer keys rather than maintained by hand.
+
 ## Status
 
 **Phase 1 — complete.** Objective verification, source validation, and the curriculum map.
 
-Not yet built, and deliberately out of scope here:
+**Phase 2 — complete.** The assessment bank: 66 warm-up retrieval prompts, 11 session
+quizzes with progressive carry-forward, 2 domain checkpoints, and a timed 45-item final
+readiness set. 197 scored items, all objective-mapped and Microsoft Learn sourced.
 
-- Phase 2 — quiz banks: warm-ups, session quizzes, domain checkpoints, written against the objective IDs
+Not yet built:
+
 - Phase 3 — session materials: slides, instructor notes, learner handouts, objective checklists
 - Phase 4 — lab guides: step-by-step versions of each session's practice activity, with no-cost variants
 - Phase 5 — cohort operations: enrollment communications, readiness tracking, exam-scheduling support

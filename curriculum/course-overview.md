@@ -115,25 +115,34 @@ pricing models in Session 8, and takes the largest share of Session 12.
 
 ## Assessment strategy
 
-Phase 1 defines the assessment architecture. Quiz items are **not** written yet — that is
-Phase 2.
+Every instrument below is written and ready to use in [`../quizzes/`](../quizzes/):
+**197 scored items plus 66 warm-up retrieval prompts**, each traceable to an objective ID
+and a Microsoft Learn source. Conventions, carry-forward composition, and scoring rules
+are in [`../quizzes/README.md`](../quizzes/README.md).
 
 | Instrument | When | Length | Scope | Purpose |
 | --- | --- | --- | --- | --- |
-| Cumulative warm-up | Start of every session | 10 min | Prior sessions, expanding interval | Retrieval practice; ungraded |
-| Session quiz | End of every session | 10–15 min | That session's objectives only | Confirm first-pass understanding |
-| Domain 1 checkpoint | Start of Session 3 | 15 min | All 15 Domain 1 objectives | Catch conceptual gaps before Azure services pile on |
-| Domain 2 checkpoint | Start of Session 8 | 15 min | All 27 Domain 2 objectives | Catch service-recall gaps at the halfway point |
-| Domain 3 checkpoint | Within the Session 11 quiz | 15 min | Domain 3, weighted to monitoring | Close the final domain |
+| [Cumulative warm-up](../quizzes/warm-ups.md) | Start of every session after the first | 10 min, 6 prompts | Prior sessions, expanding interval | Free-recall retrieval practice; ungraded |
+| Session quiz | End of every session | 10–15 min, 10–12 items | Mostly that session's objectives, plus a carry-forward block from earlier sessions | Confirm first-pass understanding and keep earlier material live |
+| [Domain 1 checkpoint](../quizzes/checkpoint-domain-1.md) | Start of Session 3 | 15 min, 12 items | All 15 Domain 1 objectives | Catch conceptual gaps before Azure services pile on |
+| [Domain 2 checkpoint](../quizzes/checkpoint-domain-2.md) | Start of Session 8 | 15 min, 12 items | All 27 Domain 2 objectives | Catch service-recall gaps at the halfway point |
+| [Domain 3 checkpoint](../quizzes/session-11-quiz.md) | Inside the Session 11 quiz | 15 min, 12 items | Monitoring in depth, plus a sweep of all of 3.1–3.3 | Close the final domain |
 | Cumulative review | Session 11 | 35 min | Domains 1 and 2 | Confidence self-rating against the objective checklist |
-| Full practice assessment | Session 12, timed | 45 min | All 57 objectives | Readiness signal by domain |
-| Post-course practice | 10-day window | Varies | All objectives | Confirm readiness before sitting the exam |
+| [Final readiness set](../quizzes/final-readiness-set.md) | Session 12, timed | 45 min, 45 items | All 57 objectives, weight-aligned | Readiness signal by domain |
+| Official practice assessment | Session 11 homework, then the 10-day window | 45 min | All objectives | Independent readiness reading in Microsoft's own item styles |
 
-**Readiness bar before sitting the exam:** two separate attempts at the official practice
-assessment at 85% or better overall, with no domain below 75%, and no objective marked
-blank on the objective checklist. The practice assessment is not the exam and its score is
-not predictive in any published way, so the bar is deliberately above the 700 passing
-score.
+**Readiness bar before sitting the exam:** 85% or better overall with no domain below 75%,
+on the Session 12 final readiness set *and* on a separate attempt at the official practice
+assessment, with no objective marked blank on the objective checklist. Neither instrument
+is the exam, and Microsoft publishes no relationship between practice scores and exam
+outcomes, so the bar sits deliberately above the 700 passing score.
+
+Two rules keep the assessment honest. Context-only topics — sustainability, encryption and
+key management, the Service Trust Portal, AI/ML/IoT services, cost optimization, and
+Copilot in Azure — are taught but never scored, because they are not bulleted objectives.
+And no item anywhere in this course comes from an exam dump; items are written from
+published objectives and official documentation, and the only third-party practice
+instrument used is Microsoft's own.
 
 ## Hands-on environment
 

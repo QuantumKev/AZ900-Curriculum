@@ -33,8 +33,14 @@ change in that revision.
 | --- | --- |
 | **Taught** | Session where the objective receives first-pass direct instruction. |
 | **Practiced** | Session where learners do something with it: portal or CLI activity, guided project, sorting/scenario exercise, or calculator work. |
-| **Quizzed** | Session whose end-of-session formative quiz includes the objective. Every session ends with a 15-minute quiz covering that session's objectives. |
-| **Reviewed cumulatively** | Later sessions that revisit the objective through the 10-minute spaced-retrieval warm-up, a domain checkpoint, or the Session 12 readiness pass. |
+| **Quizzed** | Session whose end-of-session formative quiz gives the objective its first formal assessment. |
+| **Reviewed cumulatively** | Later sessions that revisit the objective through the 10-minute spaced-retrieval warm-up, a carry-forward quiz item, a domain checkpoint, or the Session 12 readiness pass. |
+
+Later session quizzes also re-assess earlier objectives through their carry-forward blocks,
+which is how the review column is delivered in practice. The written instruments are in
+[`../quizzes/`](../quizzes/), and
+[`../quizzes/coverage-matrix.md`](../quizzes/coverage-matrix.md) shows, per objective,
+exactly which warm-up, quiz, checkpoint, and readiness instruments assess it.
 
 Domain checkpoints are why some sessions appear in nearly every review column: the
 Domain 1 checkpoint at the start of Session 3 sweeps all 15 Domain 1 objectives, the
@@ -337,7 +343,7 @@ provide.
 | G5 | 2.3.4 Describe storage account options and storage types | The module focuses on services and redundancy; account kinds and performance tiers need the storage account overview doc. | Use the storage account overview doc in S6. **NEEDS VERIFICATION** of the current account-type and performance-tier list at delivery time, since this list changes. |
 | G6 | 2.4.3 Describe external identities in Azure | Naming is mid-transition: the module says "Microsoft Entra External ID for customers (formerly Azure AD B2C)", and Azure AD B2C is closed to new customers effective May 1, 2025. | Teach B2B collaboration, B2B direct connect, and Microsoft Entra External ID for customers with current names only. Do not teach B2C-specific configuration. |
 | G7 | 3.2.1 Describe the purpose of Microsoft Purview in Azure | Purview is a broad portfolio; beginners over-scope it. | Scope S9 strictly to governance/compliance purpose as framed by the module, and state explicitly what is out of scope for AZ-900. |
-| G8 | 3.3.4 Describe infrastructure as code (IaC) | The objective names ARM and ARM templates; the wider Azure ecosystem has moved much IaC authoring to Bicep, which the objective does not name. | Teach IaC concepts and ARM/ARM templates as the examinable content; mention Bicep once as current practice and label it context, not exam scope. |
+| G8 | 3.3.4 Describe infrastructure as code (IaC) | The objective names ARM and ARM templates. The official module now also teaches **Bicep** as a declarative language for ARM deployments, but Bicep is not named in the skills measured. | Teach IaC concepts and ARM/ARM templates as the examinable content; present Bicep as current practice and label it context, not exam scope. Bicep is excluded from the quiz bank. |
 | G9 | 3.4.3 Describe Azure Monitor | One short unit covers Log Analytics, alerts, and Application Insights together; three distinct tools in roughly three minutes of official content. | Give each its own S11 block with a concrete example, plus the Service Health and Activity Log alerts guided project. |
 | G10 | All practice activities | Several practice activities assume an Azure subscription the learner controls. | Every session lists a no-cost fallback (Cloud Shell, pricing calculator, read-only portal views, guided projects, instructor demo). See course overview. |
 
