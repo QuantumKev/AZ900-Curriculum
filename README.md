@@ -18,7 +18,7 @@ handouts are later phases. See [Status](#status) below.
 | [`curriculum/course-overview.md`](curriculum/course-overview.md) | Audience, prerequisites, outcomes, exam snapshot, instructional model, assessment strategy, hands-on environment options, the 10-day post-course readiness plan, instructor prep, accessibility, risks |
 | [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md) | All 12 sessions, block by block, with minute budgets, practice activities, quiz scope, assignments, and source links per session |
 | [`curriculum/exam-objective-map.md`](curriculum/exam-objective-map.md) | All 57 objectives with taught / practiced / quizzed / cumulatively-reviewed columns, coverage totals, time-versus-weight analysis, and the gap list |
-| [`quizzes/`](quizzes/) | The full assessment bank: warm-ups, 11 session quizzes, 2 domain checkpoints, and the timed final readiness set — 197 scored items plus 66 retrieval prompts, with answer keys, objective IDs, and sources. Start at [`quizzes/README.md`](quizzes/README.md) |
+| [`quizzes/`](quizzes/) | The full assessment bank: warm-ups, 11 session quizzes, 2 domain checkpoints, and the timed final readiness set — 199 scored items plus 66 retrieval prompts, with answer keys, objective IDs, and sources. Start at [`quizzes/README.md`](quizzes/README.md) |
 | [`sources/microsoft-learn-links.md`](sources/microsoft-learn-links.md) | Every primary source, learning path, module, guided project, verified unit, and per-objective Azure documentation link |
 | [`sources/source-validation-log.md`](sources/source-validation-log.md) | What was verified and how, conflicts with secondary sources, outdated terminology, NEEDS VERIFICATION items, and the re-validation procedure |
 
@@ -133,7 +133,7 @@ answer keys rather than maintained by hand.
 
 **Phase 2 — complete.** The assessment bank: 66 warm-up retrieval prompts, 11 session
 quizzes with progressive carry-forward, 2 domain checkpoints, and a timed 45-item final
-readiness set. 197 scored items, all objective-mapped and Microsoft Learn sourced.
+readiness set. 199 scored items, all objective-mapped and Microsoft Learn sourced.
 
 Not yet built:
 

@@ -116,7 +116,7 @@ pricing models in Session 8, and takes the largest share of Session 12.
 ## Assessment strategy
 
 Every instrument below is written and ready to use in [`../quizzes/`](../quizzes/):
-**197 scored items plus 66 warm-up retrieval prompts**, each traceable to an objective ID
+**199 scored items plus 66 warm-up retrieval prompts**, each traceable to an objective ID
 and a Microsoft Learn source. Conventions, carry-forward composition, and scoring rules
 are in [`../quizzes/README.md`](../quizzes/README.md).
 

@@ -1,7 +1,7 @@
 # Coverage Matrix (generated)
 
-Generated from the answer keys in this folder. A mark means at least one item in
-that instrument assesses the objective. Regenerate after adding or changing items.
+Generated from the answer keys in this folder. A mark means at least one item in that
+instrument assesses the objective. Regenerate after adding or changing items.
 
 | Objective | Warm-ups | S1 | S2 | S3 | S4 | S5 | S6 | S7 | S8 | S9 | S10 | S11 | D1 check | D2 check | Final | Instruments |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ that instrument assesses the objective. Regenerate after adding or changing item
 | 1.1.6 | x |  | x |  |  |  |  |  | x |  |  |  | x |  | x | 5 |
 | 1.1.7 | x |  | x |  | x |  |  |  |  |  |  |  | x |  | x | 5 |
 | 1.2.1 | x |  | x | x |  |  |  |  |  |  |  |  | x |  | x | 5 |
-| 1.2.2 | x |  | x |  |  |  |  |  |  |  |  |  | x |  | x | 4 |
+| 1.2.2 | x |  | x |  |  |  | x |  |  |  |  |  | x |  | x | 5 |
 | 1.2.3 | x |  | x |  |  |  |  | x |  |  |  |  | x |  | x | 5 |
 | 1.2.4 | x |  | x |  |  |  |  |  |  |  |  |  | x |  | x | 4 |
 | 1.3.1 | x |  | x |  | x |  |  |  |  |  |  |  | x |  | x | 5 |
@@ -21,7 +21,7 @@ that instrument assesses the objective. Regenerate after adding or changing item
 | 1.3.3 | x |  | x |  |  |  |  |  |  |  |  |  | x |  | x | 4 |
 | 1.3.4 | x |  | x | x |  |  |  |  |  |  |  |  | x |  | x | 5 |
 | 2.1.1 | x |  |  | x |  | x |  |  |  |  |  |  |  | x | x | 5 |
-| 2.1.2 | x |  |  | x |  |  |  |  |  |  |  |  |  | x | x | 4 |
+| 2.1.2 | x |  |  | x |  |  | x |  |  |  |  |  |  | x | x | 5 |
 | 2.1.3 |  |  |  | x |  |  |  |  |  |  |  |  |  | x | x | 3 |
 | 2.1.4 | x |  |  | x | x |  |  |  |  |  |  |  |  | x | x | 5 |
 | 2.1.5 | x |  |  | x |  |  |  |  |  |  |  |  |  | x | x | 4 |
@@ -62,9 +62,14 @@ that instrument assesses the objective. Regenerate after adding or changing item
 | 3.4.1 | x |  |  |  |  |  |  |  |  |  |  | x |  |  | x | 3 |
 | 3.4.2 | x |  |  |  |  |  |  |  |  |  |  | x |  |  | x | 3 |
 | 3.4.3 | x |  |  |  |  |  |  |  |  |  |  | x |  |  | x | 3 |
-| **Objectives covered** | 49 | 5 | 12 | 10 | 7 | 5 | 7 | 10 | 7 | 6 | 8 | 18 | 15 | 27 | 57 | |
+| **Objectives covered** | 49 | 5 | 12 | 10 | 7 | 5 | 9 | 10 | 7 | 6 | 8 | 18 | 15 | 27 | 57 | |
 
-All 57 objectives appear in at least one session quiz, in the checkpoint for their
-domain, and in the final readiness set. Objectives with a low instrument count are
-assessed less often by design: they are narrow objectives such as 2.1.3 (Azure
-datacenters) that are best checked inside a multi-part vocabulary item.
+Every objective appears in at least one session quiz, in the checkpoint for its
+domain, and in the final readiness set. Instrument counts range from
+3 to 7.
+Low counts are by design: narrow objectives such as 2.1.3 (Azure datacenters) are
+best assessed inside a multi-part vocabulary item rather than given items of their own.
+
+Regenerate this file after editing any answer key. The generator parses the third
+column of every answer-key table row for objective IDs, plus the `**(id)**` markers
+in the warm-up prompts, so keeping those columns accurate is what keeps this honest.

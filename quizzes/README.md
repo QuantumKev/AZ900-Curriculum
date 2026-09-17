@@ -1,7 +1,7 @@
 # Quiz Bank — Phase 2
 
 Every assessment instrument for the 12-session course: warm-ups, session quizzes, domain
-checkpoints, and the final readiness set. **197 scored items plus 66 warm-up retrieval
+checkpoints, and the final readiness set. **199 scored items plus 66 warm-up retrieval
 prompts**, all traceable to a current AZ-900 objective and a Microsoft Learn source.
 
 Microsoft Learn is the only source for item content. The two GitHub study guides remain
