@@ -17,7 +17,9 @@ set -uo pipefail
 cd "$(dirname "$0")/.."
 
 GITHUB_REPO="${GITHUB_REPO:-QuantumKev/AZ900-Curriculum}"
-SOURCE_BRANCH="${SOURCE_BRANCH:-cursor/az900-github-ready-1bab}"
+# Self-contained history, so it publishes cleanly into an empty repository.
+# Override with SOURCE_BRANCH=... if you need a different branch.
+SOURCE_BRANCH="${SOURCE_BRANCH:-cursor/az900-phase1-curriculum-1bab}"
 TARGET_BRANCH="${1:-main}"
 
 say() { printf '%s\n' "$*"; }
@@ -63,9 +65,24 @@ scrub() {
 explain_auth_failure() {
   say ""
   say "----------------------------------------------------------------------"
-  say "The push failed for lack of a GitHub credential, not because the"
-  say "repository is missing. GitHub answers \"Repository not found\" when the"
-  say "request has no write access, even for a repository that exists."
+  if ! curl -fsS -o /dev/null --max-time 20 "https://api.github.com/repos/${GITHUB_REPO}" 2>/dev/null; then
+    say "github.com/${GITHUB_REPO} does not exist, or is private and this"
+    say "request cannot see it."
+    say ""
+    say "If it does not exist, create it on GitHub first:"
+    say "  - New repository, named $(basename "$GITHUB_REPO")"
+    say "  - Do NOT tick \"Add a README\", .gitignore, or a license. An empty"
+    say "    repository lets this push land cleanly as the first commit."
+    say ""
+    say "Then re-run this script. If the repository is private and you are"
+    say "using GITHUB_TOKEN, make sure the token lists it under repository"
+    say "access — a fine-grained token cannot see repositories created after"
+    say "it was issued unless you add them."
+    say "----------------------------------------------------------------------"
+    return
+  fi
+  say "The repository exists, so this is a credentials problem. GitHub also"
+  say "answers \"Repository not found\" when a push has no write access."
   say ""
   if [ -z "${GITHUB_TOKEN:-}" ]; then
     say "GITHUB_TOKEN is not set here, and no git credential for github.com"
