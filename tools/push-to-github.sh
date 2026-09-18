@@ -13,7 +13,7 @@
 #
 # The token is never written to .git/config and is scrubbed from any output.
 
-set -euo pipefail
+set -uo pipefail
 cd "$(dirname "$0")/.."
 
 GITHUB_REPO="${GITHUB_REPO:-QuantumKev/AZ900-Curriculum}"
@@ -60,13 +60,47 @@ scrub() {
   fi
 }
 
+explain_auth_failure() {
+  say ""
+  say "----------------------------------------------------------------------"
+  say "The push failed for lack of a GitHub credential, not because the"
+  say "repository is missing. GitHub answers \"Repository not found\" when the"
+  say "request has no write access, even for a repository that exists."
+  say ""
+  if [ -z "${GITHUB_TOKEN:-}" ]; then
+    say "GITHUB_TOKEN is not set here, and no git credential for github.com"
+    say "was usable. Two places this does work:"
+    say ""
+    say "  1. Your own machine. In WSL:"
+    say "       origin repo clone kevin-robinson/az900-curriculum-guide"
+    say "       cd az900-curriculum-guide"
+    say "       bash tools/push-to-github.sh"
+    say ""
+    say "  2. A NEWLY STARTED cloud agent on this repository, which receives"
+    say "     the GITHUB_TOKEN dashboard secret. Secrets are injected only at"
+    say "     agent start, so an agent already running will never have it."
+  else
+    say "GITHUB_TOKEN is set but was rejected. Check that the token:"
+    say "  - has not expired,"
+    say "  - grants Contents: read and write,"
+    say "  - and lists ${GITHUB_REPO} under its repository access."
+  fi
+  say "----------------------------------------------------------------------"
+}
+
 if [ "${DRY_RUN:-0}" = "1" ]; then
   say "DRY RUN — no changes will be pushed."
-  git push --dry-run "$PUSH_URL" "${COMMIT}:refs/heads/${TARGET_BRANCH}" 2>&1 | scrub
+  if ! git push --dry-run "$PUSH_URL" "${COMMIT}:refs/heads/${TARGET_BRANCH}" 2>&1 | scrub; then
+    explain_auth_failure
+    exit 1
+  fi
   exit 0
 fi
 
-git push "$PUSH_URL" "${COMMIT}:refs/heads/${TARGET_BRANCH}" 2>&1 | scrub
+if ! git push "$PUSH_URL" "${COMMIT}:refs/heads/${TARGET_BRANCH}" 2>&1 | scrub; then
+  explain_auth_failure
+  exit 1
+fi
 
 REMOTE_HEAD="$(git ls-remote "$PUSH_URL" "refs/heads/${TARGET_BRANCH}" 2>/dev/null | cut -f1 | scrub)"
 say ""
