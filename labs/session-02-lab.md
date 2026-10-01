@@ -84,12 +84,39 @@ A reservation commits you to a specific resource (size, and typically region) fo
 
 ### Part C demo script
 
-Rehearse before class. Stop at the review screen. Delete anything you create before learners leave.
+Rehearse before class. The current portal opens **Create Function App (Flex Consumption)**. That title is the serverless plan. Stay on the **Basics** tab. Do not tour the other tabs. Stop without selecting Create. Delete anything you accidentally create before learners leave.
 
-1. Portal search: **Function App**. Create.
-2. Put it in a resource group named `az900-s02-demo`. Pick the region you will use all course.
-3. Point at the hosting plan. Prefer the consumption-style plan the portal currently offers (Consumption or Flex Consumption). **NEEDS VERIFICATION** of the plan label on the day, because Microsoft renames hosting options. Do not pick a plan that asks you to choose a virtual-machine size; that hides the serverless point.
-4. Say the five facts from Part C while that plan is on screen. Show that the trigger is the idea (HTTP, timer, queue) even if you do not create a function.
-5. Discard the wizard. If a resource was created, delete the resource group `az900-s02-demo` before you start the quiz.
+Say this while the Basics page is up: "The extra boxes are settings. They are not a virtual machine. We are not patching an operating system, and we are not choosing disks or a network."
 
-If the wizard has drifted past the point you rehearsed, close it and teach the five facts from the overview page. Do not debug in front of the room.
+| Field on Basics | What to do | What to say |
+| --- | --- | --- |
+| Subscription | Leave the class subscription | "Whose bill this would land on. Not today's idea." |
+| Resource group | **Create new**, name it `az900-s02-demo` | "A folder, so we can delete this in one step. The Storage tab stays empty until this name exists." |
+| Function App name | Any unique name | "A name. The `.azurewebsites.net` ending is an address the platform gives it. You did not create a server." |
+| Region | The region you will use all course | "You pick a region. You do not buy a datacenter. Regions are Session 3." |
+| Runtime stack and Version | Pick one language, any current version | "This is the platform-as-a-service point. You chose a language. Microsoft patches the operating system under it." |
+| Instance size | **2048 MB** if it is listed. That is the documented default | "This is memory for one short-lived instance: 512, 2048, or 4096 MB. It is not a virtual-machine size. You still have no operating system, no disks, and no network to manage. There is compute under here. You do not run it." |
+| Zone redundancy | Leave **off** | "That checkbox is high availability, copies in separate zones. Session 3. Turning it on also keeps instances warm, so you pay while idle. Off means the app can sit at zero until an event runs it." |
+
+Do not open these tabs in class. One sentence each if a learner asks:
+
+- **Storage.** The platform needs a storage account for its own keys and code package. That is Session 6. The red message "Select a resource group first" means the Basics resource group was not actually created. Click **Create new** and name it. Then leave diagnostics on **Configure later**. "Configure now" builds a monitoring workspace from Session 11.
+- **Azure OpenAI.** Not an exam objective.
+- **Networking.** Session 5.
+- **Monitoring.** Session 11.
+- **Durable Functions.** Not on this exam.
+- **Deployment.** How code gets uploaded. Skip.
+- **Authentication.** Session 7.
+- **Tags.** Session 8.
+
+The five facts, pointed at this screen:
+
+1. It is a Function App. The runtime is a language, not an operating-system image you patch.
+2. The plan name is Flex Consumption. That is the consumption-style plan.
+3. An event would trigger the code (HTTP, timer, queue). You are not creating the function today, so say the trigger rather than clicking into it.
+4. With zone redundancy off, you pay around the run. The instance size is memory per run, not a server left powered on.
+5. Servers still exist. Instance size is the evidence. Serverless is not a fourth model next to public, private, and hybrid.
+
+Discard the wizard. If a resource was created, delete the resource group `az900-s02-demo` before the quiz.
+
+Source for the instance sizes and the default: [Flex Consumption plan hosting](https://learn.microsoft.com/en-us/azure/azure-functions/flex-consumption-plan). Confirm the size list on the day if the dropdown has changed.

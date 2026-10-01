@@ -111,7 +111,7 @@ Part A then Part B on paper, in pairs. Walk the room. The errors you want to cat
 - Putting a steady three-year virtual machine on spot because spot is "cheapest." Cheapest is wrong if the workload cannot be evicted.
 - Putting a specific unchanging virtual machine on a savings plan when the question says a specific size for three years. That is a reservation. Use the savings plan when the question stresses a spend commitment across compute services.
 
-Part C is your demo. Five minutes. If it is not rehearsed, do the no-cost narration in the lab and move to the quiz. A failed deployment teaches nothing.
+Part C is your demo. Five minutes, Basics tab only. The portal title **Create Function App (Flex Consumption)** is the plan. Instance size is memory for one short-lived instance (512, 2048, or 4096 MB; 2048 is the usual default), not a virtual-machine size. Leave zone redundancy off, or you start paying for warm instances and you have wandered into Session 3. Do not open Storage, networking, monitoring, or authentication. The field-by-field script is in the lab. If the wizard is fighting you, teach the five facts from that title and close it. A failed deployment teaches nothing.
 
 ## 105–120 Quiz and review
 
