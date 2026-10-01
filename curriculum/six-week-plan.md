@@ -42,6 +42,11 @@ Google Forms, or LMS import — using
 handouts for every quiz are in [`../handouts/`](../handouts/), along with the objective
 checklist learners mark up in every quiz review.
 
+Slides and the minute-by-minute talk track for each session are in
+[`../sessions/`](../sessions/). The practice block is written as steps, with a no-cost
+variant, in [`../labs/`](../labs/). Enrollment messages, the readiness tracker, and
+exam scheduling are in [`../operations/`](../operations/).
+
 ## Deviation from the suggested sequence
 
 The suggested 12-session sequence was kept almost intact, because it already tracks the

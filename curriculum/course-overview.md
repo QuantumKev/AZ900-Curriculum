@@ -214,9 +214,10 @@ bash tools/build-all-pdfs.sh        # every PDF
 
 ## Instructor preparation
 
-Per session, budget roughly 60–90 minutes of prep:
+Per session, budget roughly 60–90 minutes of prep. The talk track is
+[`../sessions/`](../sessions/), and the practice steps are [`../labs/`](../labs/).
 
-- Read the official module for the session end to end, including its module assessment.
+- Read the instructor notes, then the official module for the session end to end, including its module assessment.
 - Rehearse the practice activity in the same subscription type learners will use, and time it.
 - Check the objective map's gap notes for that session — those are the predictable stumbles.
 - Re-read the [study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900) change log before each cohort. If the "Skills measured as of" date has moved past July 20, 2026, re-run the validation pass in [`../sources/source-validation-log.md`](../sources/source-validation-log.md) before teaching.
