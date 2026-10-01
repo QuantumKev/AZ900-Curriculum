@@ -79,6 +79,10 @@ Sustainability: one minute, marked context, not quizzed. Shared datacenters can 
 
 ## 55–75 Teach C — service types, serverless, pricing (1.3.1–1.3.4, 1.1.7, 1.1.6)
 
+Open the block by telling the room why this section is wider than the Microsoft Learn module. Say:
+
+"The module called Describe cloud service types is only IaaS, PaaS, and SaaS. That module is right, and its assessment only covers those three. The exam is wider. Under Describe cloud computing, the study guide also lists compare cloud pricing models and describe serverless. Microsoft teaches the pricing comparison in the cost module, and serverless in the Azure Functions unit, which we do not reach until later. Both are still cloud-concepts exam items, so we cover them in this section. If you only finish the service-types module, you will miss two exam bullets."
+
 Draw the responsibility shift as a staircase, not three unrelated products. As you move IaaS → PaaS → SaaS, you hand the provider more of the stack, and you give up control of that layer.
 
 Worked examples, one each:
@@ -111,7 +115,11 @@ Part A then Part B on paper, in pairs. Walk the room. The errors you want to cat
 - Putting a steady three-year virtual machine on spot because spot is "cheapest." Cheapest is wrong if the workload cannot be evicted.
 - Putting a specific unchanging virtual machine on a savings plan when the question says a specific size for three years. That is a reservation. Use the savings plan when the question stresses a spend commitment across compute services.
 
-Part C is your demo. Five minutes, Basics tab only. The portal title **Create Function App (Flex Consumption)** is the plan. Instance size is memory for one short-lived instance (512, 2048, or 4096 MB; 2048 is the usual default), not a virtual-machine size. Leave zone redundancy off, or you start paying for warm instances and you have wandered into Session 3. Do not open Storage, networking, monitoring, or authentication. The field-by-field script is in the lab. If the wizard is fighting you, teach the five facts from that title and close it. A failed deployment teaches nothing.
+Part C is your demo. Five minutes, Basics tab only. Before you click anything, say this with the wizard on screen:
+
+"This page is not in the service-types module. That module stopped at IaaS, PaaS, and SaaS. This screen is the other exam bullet, describe serverless. The title, Flex Consumption, is the plan. A function runs when an event happens, you do not patch a server, and you pay around that run. Serverless is not a fourth type next to IaaS, PaaS, and SaaS. The extra fields are settings the platform asks for. We are not learning them today. Instance size is memory for one short run, not a virtual machine. I am leaving zone redundancy off so this does not turn into a high-availability lecture. Session 4 is where we actually build a function. The pricing models we just did — pay-as-you-go, reservation, savings plan, and spot — are the other exam item that the service-types module does not contain. This wizard is not those four. Pay-as-you-go is the one this plan resembles, because you have not committed to a year of a specific machine."
+
+Then stay on Basics. Instance size: 2048 MB if it is listed (512, 2048, or 4096 MB are the current choices; 2048 is the usual default). Leave zone redundancy off. Do not open Storage, networking, monitoring, or authentication. The field-by-field script is in the lab. If the wizard is fighting you, the paragraph above is the whole demo. Close it. A failed deployment teaches nothing.
 
 ## 105–120 Quiz and review
 
