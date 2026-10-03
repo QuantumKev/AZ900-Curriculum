@@ -23,28 +23,28 @@
 - C. Azure Spot Virtual Machines
 - D. Pay-as-you-go
 
-**3.** Which statement describes Azure savings plan for compute?
+**3.** A studio's compute mix changes between virtual machines, containers, and functions, but the hourly spend is steady enough to commit for one year. They do not want to lock a specific virtual machine size. Which statement describes the option that fits?
 
 - A. You commit to a specific VM size and region for one or three years
 - B. You commit to an hourly spend on eligible compute services for one or three years
 - C. You pay nothing until you exceed a monthly threshold
 - D. You bid on unused capacity and may be evicted
 
-**4.** Which statement about serverless computing is correct?
+**4.** A photo lab wants a function to run when a customer uploads a picture, and does not want a server sitting idle between uploads. Which statement about that approach is correct?
 
 - A. There are no servers involved anywhere in the architecture
 - B. You must keep at least one instance running to receive events
 - C. An event triggers your code, and resources are allocated only around the run
 - D. Serverless is a fourth cloud deployment model alongside public, private, and hybrid
 
-**5.** Which pair correctly matches the scaling type to its action?
+**5.** A game studio adds CPU and memory to one server, and on a different system adds and removes whole servers as players come and go. Which pair correctly matches the scaling type to its action?
 
 - A. Vertical scaling adds more virtual machines; horizontal scaling adds CPU and RAM
 - B. Vertical scaling adds CPU and RAM to a resource; horizontal scaling adds or removes resources
 - C. Both add resources; only the billing differs
 - D. Vertical scaling happens automatically; horizontal scaling is always manual
 
-**6.** Which best describes reliability as a cloud benefit?
+**6.** A payments company loses a datacenter and the application comes back and keeps working. Which best describes the benefit they just relied on?
 
 - A. Predicting next quarter's cloud spend accurately
 - B. The ability of a system to recover from failures and continue to function
@@ -58,14 +58,14 @@
 - C. Manageability in the cloud
 - D. Governance
 
-**8.** Which of these are examples of governance and compliance benefits in the cloud? (Select all that apply.)
+**8.** A hospital wants help keeping deployments inside its standards. Which of these are examples of that governance benefit? (Select all that apply.)
 
 - A. Deploying from templates so resources meet your technical standards
 - B. Cloud-based auditing that flags resources out of compliance with your baseline
 - C. Automatic replication of all data to every region by default
 - D. Updating resources at scale when standards change
 
-**9.** Which group of capabilities describes *management of the cloud* rather than *management in the cloud*?
+**9.** An operations lead wants to scale resources, deploy them from templates, replace failed ones, and alert on metrics. They are not asking which screen or command line to use. Which group describes that work?
 
 - A. Azure portal, Azure CLI, Azure PowerShell, REST APIs
 - B. Autoscaling resources, deploying from templates, automatically replacing failing resources, metric-based alerts

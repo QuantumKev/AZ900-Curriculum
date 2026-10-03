@@ -63,13 +63,15 @@ the session plan reinforce the same objectives in the same order.
 
 | Sessions | Dominant item style |
 | --- | --- |
-| S1–S3 | Definition and recall. "What is X," "which statement is true," direct classification. |
-| S4–S8 | Scenario selection. "A team needs X, which service fits," with plausible adjacent-service distractors. |
-| S9–S12 | Discrimination and multi-constraint. Policy vs RBAC vs locks, Advisor vs Service Health vs Monitor, two constraints in one stem. |
+| S1–S3 | A short business scenario with one constraint. The company and the industry are not the point. |
+| S4–S8 | The same shape, with a plausible neighboring service as the wrong answer. |
+| S9–S12 | Two constraints in one stem. Policy vs RBAC vs locks, Advisor vs Service Health vs Monitor. |
+
+Warm-ups stay free recall. Scored items do not. People who have passed AZ-900 consistently say Microsoft Learn's module checks are more direct than the exam: the exam wraps the same fact in a company story. The story's extra sentences usually do not change the answer. The constraint does: the job can be interrupted, the size will not change for three years, they must control the operating system, the traffic must not cross the public internet.
 
 Carry-forward items are written one notch harder than the original item on the same
-objective. A Session 1 item might ask what the shared responsibility model is; the
-Session 7 carry-forward item asks who is responsible for OS patching on an IaaS VM.
+objective. A Session 1 item puts shared responsibility inside one company's stack; the
+Session 7 carry-forward item asks who patches the operating system on an IaaS virtual machine.
 
 ## Item conventions
 

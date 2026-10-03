@@ -19,7 +19,7 @@
 }
 
 // objectives: 1.1.6
-::S02-Q3:: Which statement describes Azure savings plan for compute? {
+::S02-Q3:: A studio's compute mix changes between virtual machines, containers, and functions, but the hourly spend is steady enough to commit for one year. They do not want to lock a specific virtual machine size. Which statement describes the option that fits? {
     ~You commit to a specific VM size and region for one or three years
     =You commit to an hourly spend on eligible compute services for one or three years
     ~You pay nothing until you exceed a monthly threshold
@@ -27,7 +27,7 @@
 }
 
 // objectives: 1.1.7
-::S02-Q4:: Which statement about serverless computing is correct? {
+::S02-Q4:: A photo lab wants a function to run when a customer uploads a picture, and does not want a server sitting idle between uploads. Which statement about that approach is correct? {
     ~There are no servers involved anywhere in the architecture
     ~You must keep at least one instance running to receive events
     =An event triggers your code, and resources are allocated only around the run
@@ -35,7 +35,7 @@
 }
 
 // objectives: 1.2.1
-::S02-Q5:: Which pair correctly matches the scaling type to its action? {
+::S02-Q5:: A game studio adds CPU and memory to one server, and on a different system adds and removes whole servers as players come and go. Which pair correctly matches the scaling type to its action? {
     ~Vertical scaling adds more virtual machines; horizontal scaling adds CPU and RAM
     =Vertical scaling adds CPU and RAM to a resource; horizontal scaling adds or removes resources
     ~Both add resources; only the billing differs
@@ -43,7 +43,7 @@
 }
 
 // objectives: 1.2.2
-::S02-Q6:: Which best describes reliability as a cloud benefit? {
+::S02-Q6:: A payments company loses a datacenter and the application comes back and keeps working. Which best describes the benefit they just relied on? {
     ~Predicting next quarter's cloud spend accurately
     =The ability of a system to recover from failures and continue to function
     ~Guaranteeing identical performance in every region
@@ -59,7 +59,7 @@
 }
 
 // objectives: 1.2.3
-::S02-Q8:: Which of these are examples of governance and compliance benefits in the cloud? (Select all that apply.) {
+::S02-Q8:: A hospital wants help keeping deployments inside its standards. Which of these are examples of that governance benefit? (Select all that apply.) {
     ~%33.33333%Deploying from templates so resources meet your technical standards
     ~%33.33333%Cloud-based auditing that flags resources out of compliance with your baseline
     ~%-100%Automatic replication of all data to every region by default
@@ -67,7 +67,7 @@
 }
 
 // objectives: 1.2.4
-::S02-Q9:: Which group of capabilities describes management of the cloud rather than management in the cloud? {
+::S02-Q9:: An operations lead wants to scale resources, deploy them from templates, replace failed ones, and alert on metrics. They are not asking which screen or command line to use. Which group describes that work? {
     ~Azure portal, Azure CLI, Azure PowerShell, REST APIs
     =Autoscaling resources, deploying from templates, automatically replacing failing resources, metric-based alerts
     ~Purchasing subscriptions, assigning licenses, paying invoices

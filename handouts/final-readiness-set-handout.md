@@ -33,7 +33,7 @@ immediately afterward.
 - iii. A media startup runs entirely on services bought from one cloud provider &nbsp; <span class="blank"></span>
 - iv. A bank runs workloads with two separate public cloud providers and manages security in both &nbsp; <span class="blank"></span>
 
-**4.** Which statement best explains why cloud spending is classified as an operating expense?
+**4.** A bookstore pays its cloud bill each month for the capacity it used, instead of buying the servers up front. Which statement best explains why that spending is an operating expense?
 
 - A. Cloud resources depreciate over five years
 - B. You pay for services as you consume them rather than purchasing infrastructure up front
@@ -47,7 +47,7 @@ immediately afterward.
 - C. Pay-as-you-go for both
 - D. Savings plan for the API; reservation for the batch job
 
-**6.** Which requirement most clearly points to a serverless service?
+**6.** Orders arrive at a warehouse system in bursts. Each order needs a few seconds of code, and nothing needs to run between orders. Which requirement most clearly points to a serverless service?
 
 - A. The workload needs a specific Linux kernel version
 - B. Work arrives unpredictably as messages and each unit finishes in seconds
@@ -61,7 +61,7 @@ immediately afterward.
 - C. Both horizontal
 - D. Both vertical
 
-**8.** Which statement describes cost predictability as a cloud benefit?
+**8.** A finance team watches usage through the month and uses it to forecast next quarter's cloud bill before the invoice arrives. Which statement describes the benefit they are using?
 
 - A. Costs never change once resources are deployed
 - B. You can track usage in real time, analyze patterns, and forecast future spend, including with the pricing calculator
@@ -75,7 +75,7 @@ immediately afterward.
 - C. Manageability in the cloud
 - D. Elasticity
 
-**10.** Which list contains only *management of the cloud* capabilities?
+**10.** A platform team autoscales deployments, deploys from templates, replaces failed resources, and alerts on metrics. They are not choosing between the portal and a command line. Which list contains only that kind of work?
 
 - A. Azure portal, Azure CLI, REST APIs
 - B. Autoscaling deployments, template-based deployment, automatic replacement of failing resources, metric-based alerts
@@ -123,7 +123,7 @@ immediately afterward.
 - C. On a resource group, because resource groups can contain subscriptions
 - D. In Microsoft Entra ID, because identity governs resource configuration
 
-**17.** Which option describes the compute choice that requires no operating system management by the customer and runs code only when an event triggers it?
+**17.** A lab processes each uploaded file with a short piece of code and does not want an operating system to patch between uploads. Which option describes that compute choice?
 
 - A. Azure Virtual Machines
 - B. Azure Container Instances
@@ -137,7 +137,7 @@ immediately afterward.
 - C. Azure Virtual Desktop, then availability set
 - D. Virtual machine scale set, then region pair
 
-**19.** Which statement about virtual machine provisioning is correct?
+**19.** A technician is about to create a virtual machine and asks what they actually have to choose. Which statement about that provisioning is correct?
 
 - A. Disks and networking are created automatically and cannot be chosen
 - B. You choose the size (family, vCPU, RAM), storage disks, and networking such as the virtual network, network interface, and optionally a public IP
@@ -151,7 +151,7 @@ immediately afterward.
 - C. Orchestrating a fleet of containers across many nodes
 - D. Delivering managed Windows desktops to remote workers
 
-**21.** Which statements about Azure virtual networks are correct? (Select all that apply.)
+**21.** A network engineer is checking a design for a new virtual network before anything is built. Which statements about that design are correct? (Select all that apply.)
 
 - A. A virtual network can be divided into subnets
 - B. Network security groups can allow or block traffic based on source, destination, port, and protocol
@@ -167,7 +167,7 @@ immediately afterward.
 - iv. An on-premises network gateway needs an encrypted tunnel to an Azure virtual network over the internet &nbsp; <span class="blank"></span>
 - v. A team needs to host DNS records for its domain using the same credentials and billing as its other Azure services &nbsp; <span class="blank"></span>
 
-**23.** Which statement about endpoints is correct?
+**23.** A public website must be reachable from the internet. Which statement about the endpoint that website uses is correct?
 
 - A. A private endpoint has a public IP address but restricts access with a firewall rule
 - B. A public endpoint has a public IP address and can be accessed from anywhere in the world
@@ -189,7 +189,7 @@ immediately afterward.
 - C. Archive
 - D. Premium page blobs
 
-**26.** Which statement about Azure Storage redundancy is correct?
+**26.** A design must survive the loss of one availability zone in the primary region by keeping synchronous copies in three zones. Which statement about redundancy is correct for that design?
 
 - A. LRS replicates data across three availability zones in the primary region
 - B. ZRS replicates data synchronously across three availability zones in the primary region
@@ -226,7 +226,7 @@ immediately afterward.
 - v. In defense in depth, the data layer is at the center and every other layer exists to protect it. &nbsp; <span class="blank"></span>
 - vi. Microsoft Defender for Cloud calculates a secure score and can extend protection to AWS and GCP resources. &nbsp; <span class="blank"></span>
 
-**31.** Which factors increase what a deployed workload costs in Azure? (Select all that apply.)
+**31.** A deployed workload's bill went up, and the team is looking for causes. Which factors can increase what that workload costs in Azure? (Select all that apply.)
 
 - A. Choosing a region with higher local power and labor costs
 - B. Leaving disks and public IP addresses in place after deleting their virtual machine
@@ -241,7 +241,7 @@ immediately afterward.
 - C. Azure Advisor; it only reviews resources that already exist
 - D. Azure Monitor; it reports telemetry rather than cost
 
-**33.** Which capability shows accumulated Azure costs over time, broken down by subscription, resource group, or service, to identify spending trends?
+**33.** A finance partner wants last quarter's Azure spend, split by subscription and by service, so they can see the trend. Which capability shows that?
 
 - A. The pricing calculator
 - B. Microsoft Cost Management cost analysis
@@ -255,14 +255,14 @@ immediately afterward.
 - C. Management groups plus budgets
 - D. Purview plus Advisor
 
-**35.** Which requirement is Microsoft Purview designed to address?
+**35.** A compliance officer needs to find sensitive data wherever it lives, label it, and trace where it came from. Which requirement is Microsoft Purview designed to address?
 
 - A. Restricting which regions resources may be deployed to
 - B. Discovering and classifying sensitive data across on-premises, multicloud, and SaaS data, with end-to-end lineage
 - C. Detecting brute-force attacks against virtual machines
 - D. Estimating the monthly cost of a proposed architecture
 
-**36.** Which statements about Azure Policy are correct? (Select all that apply.)
+**36.** A platform team is deciding whether Azure Policy can enforce the standards they have in mind. Which statements about Azure Policy are correct? (Select all that apply.)
 
 - A. It can prevent noncompliant resources from being created
 - B. It evaluates resources that existed before the policy was assigned
@@ -277,7 +277,7 @@ immediately afterward.
 - C. An Azure Policy deny assignment; the owner must request an exception
 - D. The Reader role for all users; the owner is unaffected
 
-**38.** Which statement about the ways to interact with Azure is correct?
+**38.** An administrator works from a browser, already signed in, and needs both PowerShell and the CLI without installing them. Which statement about the ways to interact with Azure is correct?
 
 - A. The Azure CLI and Azure PowerShell differ in capability, with the CLI limited to read operations
 - B. Azure Cloud Shell is browser-based, already authenticated to your credentials, and supports both Azure PowerShell and the Azure CLI
@@ -291,14 +291,14 @@ immediately afterward.
 - C. Azure Virtual Desktop
 - D. Azure Data Box
 
-**40.** Which statement best describes infrastructure as code?
+**40.** A team is tired of clicking through the portal to rebuild the same environment, and wants it written down so a second run produces the same result. Which statement best describes what they are reaching for?
 
 - A. Storing infrastructure diagrams alongside application source code
 - B. Defining and provisioning infrastructure through code and templates instead of manual configuration, so deployments are repeatable and reviewable
 - C. Writing application code that scales automatically
 - D. Running scripted health checks against production resources
 
-**41.** Which statements about Azure Resource Manager and ARM templates are correct? (Select all that apply.)
+**41.** Every change goes through the same control plane, whether it started in the portal or in a script, and the team keeps a JSON file that describes the resources they want. Which statements about that control plane and those files are correct? (Select all that apply.)
 
 - A. Every request from the portal, CLI, PowerShell, SDKs, and APIs passes through Resource Manager
 - B. Resource Manager authenticates and authorizes requests before passing them to the target service
@@ -306,7 +306,7 @@ immediately afterward.
 - D. ARM templates require you to specify the deployment order of every resource manually
 - E. The same template can be redeployed to produce a consistent result
 
-**42.** A team wants a prioritized list of suggested improvements to its existing Azure environment across reliability, security, performance, operational excellence, and cost. Which service provides this?
+**42.** A team wants a prioritized list of suggested improvements to the Azure environment they already run, across reliability, security, performance, operational excellence, and cost. Which service provides this?
 
 - A. Azure Advisor
 - B. Azure Service Health

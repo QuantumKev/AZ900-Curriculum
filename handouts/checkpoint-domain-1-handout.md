@@ -11,21 +11,21 @@ immediately afterward.
 
 ---
 
-**1.** Which statement best captures what makes something cloud computing rather than traditional IT?
+**1.** One credit union still runs virtualized servers it owns in its own building. Another rents compute, storage, and networking over the internet instead of owning them. What makes the second arrangement cloud computing rather than traditional IT?
 
 - A. The workload runs on virtualized hardware
 - B. Computing services are delivered over the internet and rented rather than owned
 - C. The hardware is newer than five years old
 - D. The organization has more than one datacenter
 
-**2.** Which item is always the customer's responsibility, in every cloud service type?
+**2.** A law firm buys everything from virtual machines to a finished email product. Across every one of those purchases, one responsibility never moves to the provider. Which item is always the firm's?
 
 - A. The physical hosts
 - B. The operating system
 - C. The accounts and identities in the environment
 - D. The physical network
 
-**3.** Which statement correctly describes how responsibility shifts across service types?
+**3.** A team is moving from virtual machines they patch, to a platform that patches the operating system for them, to a finished application they only subscribe to. Which statement correctly describes how responsibility shifts along that path?
 
 - A. IaaS places the most responsibility on the provider, and SaaS the most on the customer
 - B. IaaS places the most responsibility on the customer, SaaS the most on the provider, and PaaS sits between them
@@ -39,7 +39,7 @@ immediately afterward.
 - iii. A startup with no hardware buys all of its infrastructure from a cloud provider &nbsp; <span class="blank"></span>
 - iv. An enterprise runs production workloads with two different public cloud providers and manages security in both &nbsp; <span class="blank"></span>
 
-**5.** Which outcome is the clearest consequence of the consumption-based model?
+**5.** A news site adds servers for election night and deletes them the next day so it is not paying for idle machines. Which outcome of the consumption-based model is this?
 
 - A. You purchase capacity in advance to guarantee availability
 - B. You pay only for resources you use, and you can release them when demand drops
@@ -53,7 +53,7 @@ immediately afterward.
 - C. Azure Spot Virtual Machines
 - D. The Azure free account
 
-**7.** Which description matches serverless computing?
+**7.** A shipping company wants code to run only when a queue message arrives, for a few seconds, and to pay for that run rather than for a server left on. Which description matches what they need?
 
 - A. Code runs on a VM you size and patch yourself
 - B. Code is triggered by an event, resources are allocated around the run and released afterward, and you pay for the time it executes
@@ -67,21 +67,21 @@ immediately afterward.
 - C. Manageability and predictability
 - D. Security and reliability
 
-**9.** Which statement describes reliability as distinct from predictability?
+**9.** A bank comes back online after a datacenter failure, and separately can forecast next quarter's cloud bill from usage. Which statement describes reliability as distinct from predictability in that pair?
 
 - A. Reliability is forecasting cost; predictability is recovering from failure
 - B. Reliability is recovering from failure and continuing to function; predictability is being able to anticipate performance and cost
 - C. They are two names for the same property
 - D. Reliability applies only to storage; predictability only to compute
 
-**10.** Which pair of capabilities are governance and security benefits of the cloud?
+**10.** A retailer deploys every new resource from a template so it meets a standard, and gets a flag when a live resource drifts from that standard. Which pair of capabilities are these?
 
 - A. Deploying from templates to meet technical standards, and cloud-based auditing that flags noncompliant resources
 - B. Buying hardware in bulk, and negotiating vendor discounts
 - C. Writing application code, and running unit tests
 - D. Assigning licenses, and paying invoices
 
-**11.** Which set of activities describes management *in* the cloud?
+**11.** An operator manages the same environment from a web portal on some days and from a command line or PowerShell on others. Which set of activities describes what they are doing?
 
 - A. Autoscaling resources and automatically replacing failing resources
 - B. Deploying from preconfigured templates and receiving metric-based alerts
