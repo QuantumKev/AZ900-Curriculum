@@ -28,7 +28,7 @@
 }
 
 // objectives: 1.1.5
-::final-readiness-set-Q4:: Which statement best explains why cloud spending is classified as an operating expense? {
+::final-readiness-set-Q4:: A bookstore pays its cloud bill each month for the capacity it used, instead of buying the servers up front. Which statement best explains why that spending is an operating expense? {
     ~Cloud resources depreciate over five years
     =You pay for services as you consume them rather than purchasing infrastructure up front
     ~Cloud providers invoice annually
@@ -44,7 +44,7 @@
 }
 
 // objectives: 1.1.7
-::final-readiness-set-Q6:: Which requirement most clearly points to a serverless service? {
+::final-readiness-set-Q6:: Orders arrive at a warehouse system in bursts. Each order needs a few seconds of code, and nothing needs to run between orders. Which requirement most clearly points to a serverless service? {
     ~The workload needs a specific Linux kernel version
     =Work arrives unpredictably as messages and each unit finishes in seconds
     ~Users need a full managed Windows desktop
@@ -60,7 +60,7 @@
 }
 
 // objectives: 1.2.2
-::final-readiness-set-Q8:: Which statement describes cost predictability as a cloud benefit? {
+::final-readiness-set-Q8:: A finance team watches usage through the month and uses it to forecast next quarter's cloud bill before the invoice arrives. Which statement describes the benefit they are using? {
     ~Costs never change once resources are deployed
     =You can track usage in real time, analyze patterns, and forecast future spend, including with the pricing calculator
     ~All Azure services cost the same in every region
@@ -76,7 +76,7 @@
 }
 
 // objectives: 1.2.4
-::final-readiness-set-Q10:: Which list contains only management of the cloud capabilities? {
+::final-readiness-set-Q10:: A platform team autoscales deployments, deploys from templates, replaces failed resources, and alerts on metrics. They are not choosing between the portal and a command line. Which list contains only that kind of work? {
     ~Azure portal, Azure CLI, REST APIs
     =Autoscaling deployments, template-based deployment, automatic replacement of failing resources, metric-based alerts
     ~Purchasing subscriptions, assigning licenses
@@ -131,7 +131,7 @@
 }
 
 // objectives: 2.2.1
-::final-readiness-set-Q17:: Which option describes the compute choice that requires no operating system management by the customer and runs code only when an event triggers it? {
+::final-readiness-set-Q17:: A lab processes each uploaded file with a short piece of code and does not want an operating system to patch between uploads. Which option describes that compute choice? {
     ~Azure Virtual Machines
     ~Azure Container Instances
     =Azure Functions
@@ -147,7 +147,7 @@
 }
 
 // objectives: 2.2.3
-::final-readiness-set-Q19:: Which statement about virtual machine provisioning is correct? {
+::final-readiness-set-Q19:: A technician is about to create a virtual machine and asks what they actually have to choose. Which statement about that provisioning is correct? {
     ~Disks and networking are created automatically and cannot be chosen
     =You choose the size (family, vCPU, RAM), storage disks, and networking such as the virtual network, network interface, and optionally a public IP
     ~VM size cannot be changed after creation under any circumstances
@@ -163,7 +163,7 @@
 }
 
 // objectives: 2.2.5
-::final-readiness-set-Q21:: Which statements about Azure virtual networks are correct? (Select all that apply.) {
+::final-readiness-set-Q21:: A network engineer is checking a design for a new virtual network before anything is built. Which statements about that design are correct? (Select all that apply.) {
     ~%25.0%A virtual network can be divided into subnets
     ~%25.0%Network security groups can allow or block traffic based on source, destination, port, and protocol
     ~%-100%Virtual network peering routes traffic between peered networks over the public internet
@@ -181,7 +181,7 @@
 }
 
 // objectives: 2.2.6
-::final-readiness-set-Q23:: Which statement about endpoints is correct? {
+::final-readiness-set-Q23:: A public website must be reachable from the internet. Which statement about the endpoint that website uses is correct? {
     ~A private endpoint has a public IP address but restricts access with a firewall rule
     =A public endpoint has a public IP address and can be accessed from anywhere in the world
     ~Public and private endpoints are two names for the same feature
@@ -206,7 +206,7 @@
 }
 
 // objectives: 2.3.3
-::final-readiness-set-Q26:: Which statement about Azure Storage redundancy is correct? {
+::final-readiness-set-Q26:: A design must survive the loss of one availability zone in the primary region by keeping synchronous copies in three zones. Which statement about redundancy is correct for that design? {
     ~LRS replicates data across three availability zones in the primary region
     =ZRS replicates data synchronously across three availability zones in the primary region
     ~GRS keeps all copies within a single datacenter
@@ -252,7 +252,7 @@
 ::final-readiness-set-Q30vi:: Microsoft Defender for Cloud calculates a secure score and can extend protection to AWS and GCP resources. {T}
 
 // objectives: 3.1.1
-::final-readiness-set-Q31:: Which factors increase what a deployed workload costs in Azure? (Select all that apply.) {
+::final-readiness-set-Q31:: A deployed workload's bill went up, and the team is looking for causes. Which factors can increase what that workload costs in Azure? (Select all that apply.) {
     ~%25.0%Choosing a region with higher local power and labor costs
     ~%25.0%Leaving disks and public IP addresses in place after deleting their virtual machine
     ~%-100%Applying more tags to the resources
@@ -269,7 +269,7 @@
 }
 
 // objectives: 3.1.3
-::final-readiness-set-Q33:: Which capability shows accumulated Azure costs over time, broken down by subscription, resource group, or service, to identify spending trends? {
+::final-readiness-set-Q33:: A finance partner wants last quarter's Azure spend, split by subscription and by service, so they can see the trend. Which capability shows that? {
     ~The pricing calculator
     =Microsoft Cost Management cost analysis
     ~Azure Service Health
@@ -285,7 +285,7 @@
 }
 
 // objectives: 3.2.1
-::final-readiness-set-Q35:: Which requirement is Microsoft Purview designed to address? {
+::final-readiness-set-Q35:: A compliance officer needs to find sensitive data wherever it lives, label it, and trace where it came from. Which requirement is Microsoft Purview designed to address? {
     ~Restricting which regions resources may be deployed to
     =Discovering and classifying sensitive data across on-premises, multicloud, and SaaS data, with end-to-end lineage
     ~Detecting brute-force attacks against virtual machines
@@ -293,7 +293,7 @@
 }
 
 // objectives: 3.2.2
-::final-readiness-set-Q36:: Which statements about Azure Policy are correct? (Select all that apply.) {
+::final-readiness-set-Q36:: A platform team is deciding whether Azure Policy can enforce the standards they have in mind. Which statements about Azure Policy are correct? (Select all that apply.) {
     ~%25.0%It can prevent noncompliant resources from being created
     ~%25.0%It evaluates resources that existed before the policy was assigned
     ~%25.0%It groups related policy definitions into initiatives
@@ -310,7 +310,7 @@
 }
 
 // objectives: 3.3.1, 3.3.2
-::final-readiness-set-Q38:: Which statement about the ways to interact with Azure is correct? {
+::final-readiness-set-Q38:: An administrator works from a browser, already signed in, and needs both PowerShell and the CLI without installing them. Which statement about the ways to interact with Azure is correct? {
     ~The Azure CLI and Azure PowerShell differ in capability, with the CLI limited to read operations
     =Azure Cloud Shell is browser-based, already authenticated to your credentials, and supports both Azure PowerShell and the Azure CLI
     ~The Azure portal requires local installation on Windows
@@ -326,7 +326,7 @@
 }
 
 // objectives: 3.3.4
-::final-readiness-set-Q40:: Which statement best describes infrastructure as code? {
+::final-readiness-set-Q40:: A team is tired of clicking through the portal to rebuild the same environment, and wants it written down so a second run produces the same result. Which statement best describes what they are reaching for? {
     ~Storing infrastructure diagrams alongside application source code
     =Defining and provisioning infrastructure through code and templates instead of manual configuration, so deployments are repeatable and reviewable
     ~Writing application code that scales automatically
@@ -334,7 +334,7 @@
 }
 
 // objectives: 3.3.5
-::final-readiness-set-Q41:: Which statements about Azure Resource Manager and ARM templates are correct? (Select all that apply.) {
+::final-readiness-set-Q41:: Every change goes through the same control plane, whether it started in the portal or in a script, and the team keeps a JSON file that describes the resources they want. Which statements about that control plane and those files are correct? (Select all that apply.) {
     ~%25.0%Every request from the portal, CLI, PowerShell, SDKs, and APIs passes through Resource Manager
     ~%25.0%Resource Manager authenticates and authorizes requests before passing them to the target service
     ~%25.0%ARM templates use declarative JSON to describe the desired resources
@@ -343,7 +343,7 @@
 }
 
 // objectives: 3.4.1
-::final-readiness-set-Q42:: A team wants a prioritized list of suggested improvements to its existing Azure environment across reliability, security, performance, operational excellence, and cost. Which service provides this? {
+::final-readiness-set-Q42:: A team wants a prioritized list of suggested improvements to the Azure environment they already run, across reliability, security, performance, operational excellence, and cost. Which service provides this? {
     =Azure Advisor
     ~Azure Service Health
     ~Azure Monitor

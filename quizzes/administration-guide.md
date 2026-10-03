@@ -176,6 +176,12 @@ while there is still time to fix them.** Learners who believe a quiz is a judgme
 their confusion; learners who believe it is a diagnostic tell you what they do not
 understand. The second group passes.
 
+Say this as well, because it is how the exam is written: **read the last sentence first,
+then find the one constraint.** The company name and what they sell rarely decide the
+item. "Can be interrupted," "will not change size for three years," "we must patch the
+operating system," and "must not cross the public internet" do. When you review a miss,
+ask for that constraint. If the learner retells the story, they studied the wrong layer.
+
 ## Regenerating everything
 
 ```bash

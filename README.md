@@ -8,8 +8,8 @@ to adult beginners in six weeks, built strictly against current Microsoft Learn 
 - No calendar dates anywhere: sessions and the post-course plan use relative numbering
 - All **57 current exam objectives** mapped to where they are taught, practiced, quizzed, and cumulatively reviewed
 
-**This repository is Phase 1 only: the curriculum map.** Quizzes, slides, labs, and
-handouts are later phases. See [Status](#status) below.
+Phases 1 through 5 are in this repository: the curriculum map, the quiz bank, session
+slides and instructor notes, lab guides, and cohort operations. See [Status](#status) below.
 
 ## Contents
 
@@ -25,6 +25,9 @@ handouts are later phases. See [Status](#status) below.
 | [`sources/microsoft-learn-links.md`](sources/microsoft-learn-links.md) | Every primary source, learning path, module, guided project, verified unit, and per-objective Azure documentation link |
 | [`sources/source-validation-log.md`](sources/source-validation-log.md) | What was verified and how, conflicts with secondary sources, outdated terminology, NEEDS VERIFICATION items, and the re-validation procedure |
 | [`exports/`](exports/) | Generated for import: `item-bank.csv` with all 199 items, GIFT files per quiz for LMS import, and an import report |
+| [`sessions/`](sessions/) | Phase 3. Slides and instructor notes for all 12 sessions, with minute-by-minute talk tracks |
+| [`labs/`](labs/) | Phase 4. Step-by-step practice for each session, including the no-cost variant |
+| [`operations/`](operations/) | Phase 5. Enrollment messages, the readiness tracker, exam scheduling, and the cohort session log |
 | [`tools/`](tools/) | Scripts that generate the handouts, checklist, exports, and PDFs. Nothing in `handouts/` or `exports/` is hand-maintained |
 
 ## Exam snapshot
@@ -108,8 +111,10 @@ first. It defines the audience, the assessment strategy, the hands-on environmen
 including a no-cost path, and the 10-day post-course exam plan.
 
 **Instructors:** teach from [`curriculum/six-week-plan.md`](curriculum/six-week-plan.md),
-and read [`quizzes/administration-guide.md`](quizzes/administration-guide.md) before the
-first session to decide how you will deliver quizzes.
+with the talk track in [`sessions/`](sessions/) and the practice steps in [`labs/`](labs/).
+Read [`quizzes/administration-guide.md`](quizzes/administration-guide.md) before the
+first session to decide how you will deliver quizzes. Cohort messages, the readiness
+tracker, and exam scheduling are in [`operations/`](operations/).
 Each session lists its objectives, minute-by-minute blocks, practice activity with a
 no-cost fallback, quiz scope, assignment, and source links. Before each cohort, run the
 re-validation procedure at the end of
@@ -150,11 +155,11 @@ readiness set. 199 scored items, all objective-mapped and Microsoft Learn source
 checklist, printable handouts for every quiz, the quiz administration guide, an item-bank
 CSV, GIFT files for LMS import, and the scripts that regenerate all of it.
 
-Not yet built:
+**Phase 3 — complete.** Slides and instructor notes for all 12 sessions, in [`sessions/`](sessions/).
 
-- Phase 3 — session materials: slides and instructor notes per session
-- Phase 4 — lab guides: step-by-step versions of each session's practice activity, with no-cost variants
-- Phase 5 — cohort operations: enrollment communications, readiness tracking, exam-scheduling support
+**Phase 4 — complete.** A step-by-step lab for each session's practice block, each with a no-cost variant, in [`labs/`](labs/).
+
+**Phase 5 — complete.** Enrollment messages, a readiness tracker, exam-scheduling support, and a cohort session log, in [`operations/`](operations/).
 
 ## License and attribution
 

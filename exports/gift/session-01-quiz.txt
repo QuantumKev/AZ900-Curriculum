@@ -3,7 +3,7 @@
 // GIFT format. Import into Moodle: Question bank > Import > GIFT format.
 
 // objectives: 1.1.1
-::S01-Q1:: Which statement best describes cloud computing? {
+::S01-Q1:: A dental clinic stops buying servers and starts renting compute, storage, and networking from a provider, delivered over the internet. Which statement best describes what the clinic adopted? {
     ~Running virtualization software on servers your organization owns
     =Delivering computing services such as compute, storage, and networking over the internet
     ~Backing up on-premises data to a second building
@@ -11,7 +11,7 @@
 }
 
 // objectives: 1.1.2
-::S01-Q2:: Under the shared responsibility model, which items remain your responsibility no matter which cloud service type you use? (Select all that apply.) {
+::S01-Q2:: A manufacturer uses infrastructure, platform, and software services at the same time. Which items remain the manufacturer's responsibility in every one of those services? (Select all that apply.) {
     ~%33.33333%The data and information you store in the cloud
     ~%-100%The physical hosts running your workloads
     ~%33.33333%The accounts and identities in your environment
@@ -20,7 +20,7 @@
 }
 
 // objectives: 1.1.2
-::S01-Q3:: Which three items are always the cloud provider's responsibility? {
+::S01-Q3:: An auditor asks which parts of the environment the cloud provider owns no matter which service the customer bought. Which three items are always the provider's? {
     ~Operating systems, applications, and network controls
     =The physical datacenter, the physical network, and the physical hosts
     ~Identity and access, data, and devices
@@ -36,7 +36,7 @@
 }
 
 // objectives: 1.1.2
-::S01-Q5:: Which cloud service type places the most responsibility on the customer? {
+::S01-Q5:: A university wants the service type that leaves them responsible for the operating system and everything installed on it. Which type places the most responsibility on the customer? {
     ~SaaS
     ~PaaS
     =IaaS
@@ -52,7 +52,7 @@
 }
 
 // objectives: 1.1.3
-::S01-Q7:: What most clearly distinguishes a public cloud from a private cloud? {
+::S01-Q7:: One agency can buy cloud services the same way any other customer can. Another runs a cloud used only by itself. What most clearly distinguishes the first arrangement from the second? {
     ~A public cloud is always cheaper
     =A public cloud is available to anyone who wants to purchase the services
     ~A public cloud cannot be used for regulated workloads
@@ -84,7 +84,7 @@
 }
 
 // objectives: 1.1.5
-::S01-Q11:: In traditional IT budgeting, which term describes up-front spending on physical infrastructure such as servers and datacenter space? {
+::S01-Q11:: A hospital is still purchasing physical servers and expanding its own datacenter before any workload moves. Which term describes that up-front spending? {
     ~Operational expenditure (OpEx)
     =Capital expenditure (CapEx)
     ~Consumption-based spending
@@ -92,7 +92,7 @@
 }
 
 // objectives: 1.1.5
-::S01-Q12:: Which statement about the consumption-based model is correct? {
+::S01-Q12:: A retailer adds extra capacity for a holiday weekend and releases it on Monday so the bill stops. Which statement about the consumption-based model does this illustrate? {
     ~You pay a fixed monthly fee regardless of usage
     ~You buy capacity a year in advance to guarantee availability
     =You pay for the resources you use and can release them when demand drops

@@ -11,14 +11,14 @@ immediately afterward.
 
 ---
 
-**1.** Which statement best describes cloud computing?
+**1.** A dental clinic stops buying servers and starts renting compute, storage, and networking from a provider, delivered over the internet. Which statement best describes what the clinic adopted?
 
 - A. Running virtualization software on servers your organization owns
 - B. Delivering computing services such as compute, storage, and networking over the internet
 - C. Backing up on-premises data to a second building
 - D. Buying servers in bulk to lower the cost per unit
 
-**2.** Under the shared responsibility model, which items remain your responsibility no matter which cloud service type you use? (Select all that apply.)
+**2.** A manufacturer uses infrastructure, platform, and software services at the same time. Which items remain the manufacturer's responsibility in every one of those services? (Select all that apply.)
 
 - A. The data and information you store in the cloud
 - B. The physical hosts running your workloads
@@ -26,7 +26,7 @@ immediately afterward.
 - D. The physical network in the datacenter
 - E. The devices allowed to connect to your cloud resources
 
-**3.** Which three items are always the cloud provider's responsibility?
+**3.** An auditor asks which parts of the environment the cloud provider owns no matter which service the customer bought. Which three items are always the provider's?
 
 - A. Operating systems, applications, and network controls
 - B. The physical datacenter, the physical network, and the physical hosts
@@ -40,7 +40,7 @@ immediately afterward.
 - C. Neither party; database patching is automatic in Azure
 - D. Microsoft for security patches, you for feature updates
 
-**5.** Which cloud service type places the most responsibility on the customer?
+**5.** A university wants the service type that leaves them responsible for the operating system and everything installed on it. Which type places the most responsibility on the customer?
 
 - A. SaaS
 - B. PaaS
@@ -54,7 +54,7 @@ immediately afterward.
 - C. Hybrid cloud
 - D. Multicloud
 
-**7.** What most clearly distinguishes a public cloud from a private cloud?
+**7.** One agency can buy cloud services the same way any other customer can. Another runs a cloud used only by itself. What most clearly distinguishes the first arrangement from the second?
 
 - A. A public cloud is always cheaper
 - B. A public cloud is available to anyone who wants to purchase the services
@@ -82,14 +82,14 @@ immediately afterward.
 - C. Hybrid cloud, because it provides the most flexibility
 - D. Private cloud, because data is not collocated with other tenants' data
 
-**11.** In traditional IT budgeting, which term describes up-front spending on physical infrastructure such as servers and datacenter space?
+**11.** A hospital is still purchasing physical servers and expanding its own datacenter before any workload moves. Which term describes that up-front spending?
 
 - A. Operational expenditure (OpEx)
 - B. Capital expenditure (CapEx)
 - C. Consumption-based spending
 - D. Total cost of ownership
 
-**12.** Which statement about the consumption-based model is correct?
+**12.** A retailer adds extra capacity for a holiday weekend and releases it on Monday so the bill stops. Which statement about the consumption-based model does this illustrate?
 
 - A. You pay a fixed monthly fee regardless of usage
 - B. You buy capacity a year in advance to guarantee availability
