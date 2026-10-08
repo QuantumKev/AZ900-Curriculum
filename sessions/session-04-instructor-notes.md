@@ -29,6 +29,26 @@ Prompt 4 (who patches the OS on IaaS) and prompt 5 (one scenario each for IaaS a
 
 Virtual machine: full OS, you patch it. Container: package, shares the host OS, fast start. Function: event, no server for you to run. Point back at Session 2 serverless in one sentence so 1.1.7 is a second pass, not a new religion.
 
+Then teach the kernel with the house and the apartment. Say it before you name Container Instances, Container Apps, and AKS. Those three are products. This is why a container is not a small virtual machine.
+
+A virtual machine is a standalone house. It has its own plumbing, heating, and foundation. A container is an apartment. It shares the building's plumbing and the rest of the building's infrastructure.
+
+| | Virtual machine | Container |
+| --- | --- | --- |
+| Picture | A house with its own foundation | An apartment in a shared building |
+| Operating system | Boots its own full guest operating system, Windows or Linux. You patch that system. | Does not boot a guest operating system. It runs on the host computer's existing operating system. |
+| Kernel | Runs its own kernel | Shares the host kernel with every other container on that host |
+| Size and start | Heavy, often gigabytes, and slow to boot because the guest operating system has to load | Light, often megabytes, and starts in seconds |
+
+The kernel is the core of an operating system. It is the bridge between software and the physical hardware: CPU, memory, and disks.
+
+Draw two stacks on the board.
+
+- Virtual machine: the app talks to the guest kernel, the guest kernel talks to the hypervisor, and the hypervisor talks to the physical hardware. Those extra layers are why a virtual machine is heavier to start.
+- Container: the app talks to the host kernel, and the host kernel gives that container a slice of the hardware. There is no second operating system in the middle, which is why the container starts faster.
+
+If someone asks about security, say one sentence and stop. Sharing a kernel is why containers are light, and it is also why a problem in that kernel can affect every container on the host. A virtual machine's guest kernel is a separate boundary. The exam does not ask you to configure either case. It asks you to know that the container shares the host operating system and the virtual machine does not.
+
 Container services, say the job not the logo:
 
 - Container Instances — "run this container" without a cluster.
