@@ -1,5 +1,7 @@
 # Session 7 instructor notes — Identity, Access, and Security
 
+**Speak-from script:** [session-07/instructor-guide.md](session-07/instructor-guide.md)
+
 **Objectives:** 2.4.1–2.4.8
 **Slides:** [session-07-slides.md](session-07-slides.md)
 **Lab:** [../labs/session-07-lab.md](../labs/session-07-lab.md)
