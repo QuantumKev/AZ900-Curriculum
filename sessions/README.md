@@ -22,6 +22,17 @@ Teach from the notes. Project or print the slides. The minute budgets match
 Labs for the practice block are in [`../labs/`](../labs/). Quizzes are already written in
 [`../quizzes/`](../quizzes/).
 
+## Speak-from scripts
+
+Some sessions also have a script you can read out loud in class. Each one follows the
+Microsoft Learn module in Microsoft's unit order and fits the session's two-hour plan.
+
+| Session | Script |
+| --- | --- |
+| 5 Azure Networking | [session-05/instructor-guide.md](session-05/instructor-guide.md) |
+| 7 Identity, access, and security | [session-07/instructor-guide.md](session-07/instructor-guide.md) |
+| 8 Cost management | [session-08/instructor-guide.md](session-08/instructor-guide.md) |
+
 ## How a slide heading works
 
 Each `##` heading in a slide file is one slide. Bullets are what learners should see,

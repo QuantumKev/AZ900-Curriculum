@@ -1,5 +1,7 @@
 # Session 5 instructor notes — Azure Networking
 
+**Speak-from script:** [session-05/instructor-guide.md](session-05/instructor-guide.md)
+
 **Objectives:** 2.2.5, 2.2.6
 **Also practiced:** 3.3.2 (Cloud Shell and Azure CLI)
 **Slides:** [session-05-slides.md](session-05-slides.md)
