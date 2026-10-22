@@ -1,5 +1,7 @@
 # Session 8 instructor notes — Azure Cost Management
 
+**Speak-from script:** [session-08/instructor-guide.md](session-08/instructor-guide.md)
+
 **Objectives:** 3.1.1, 3.1.2, 3.1.3, 3.1.4, second pass on 1.1.6, touch 1.1.5 and 1.1.1
 **Slides:** [session-08-slides.md](session-08-slides.md)
 **Lab:** [../labs/session-08-lab.md](../labs/session-08-lab.md)
