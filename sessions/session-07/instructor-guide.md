@@ -73,8 +73,8 @@ At each decision, ask the room: **"What would we recommend to Contoso, and why?"
 | 0:10–0:35 | Directory services | Entra ID, Entra Connect, and Entra Domain Services are three different answers |
 | 0:35–1:00 | Authentication, external identities, Conditional Access | MFA is not SSO. A guest in the directory is not a Teams shared channel, and neither is a patient account |
 | 1:00–1:20 | RBAC, Zero Trust, defense in depth, a short encryption note, Defender for Cloud | Reader at subscription scope is understood as inheritance. Defender is not the sign-in decision |
-| 1:20–1:50 | Lab | [Session 7 lab](../labs/session-07-lab.md). Scope prediction and the layer sort are the required parts |
-| 1:50–2:00 | Scored quiz | [Session 7 quiz](../quizzes/session-07-quiz.md). Ten items. Review only what the room missed |
+| 1:20–1:50 | Lab | [Session 7 lab](../../labs/session-07-lab.md). Scope prediction and the layer sort are the required parts |
+| 1:50–2:00 | Scored quiz | [Session 7 quiz](../../quizzes/session-07-quiz.md). Ten items. Review only what the room missed |
 
 **If you are behind at 0:30.** Keep the three directory services. Skip replica sets, the one-way sync diagram detail, and who inside Microsoft uses Entra ID.
 
@@ -1043,7 +1043,7 @@ One place for a secure score, recommendations, and threat alerts, including head
 
 ## Lab
 
-**[about 1:25, or 1:20 if the pass ran long]** Open [the Session 7 lab](../labs/session-07-lab.md).
+**[about 1:25, or 1:20 if the pass ran long]** Open [the Session 7 lab](../../labs/session-07-lab.md).
 
 Part A is the scope prediction. Reader at the subscription is visible on the virtual machine and still cannot restart it. Contributor on one resource group does not reach a different resource group. Contributor does not assign roles. Owner at the management group includes the resource group underneath it. Reader on one storage account does not open the virtual machine beside it.
 
@@ -1053,7 +1053,7 @@ Part C is the layer sort. Physical, identity, perimeter, network, compute, appli
 
 ## Quiz
 
-**[1:50]** [Session 7 quiz](../quizzes/session-07-quiz.md). Ten items, ten minutes. It is already written. Do not replace it with questions you invent in the room. Review only the items several people missed. If the review runs long, you already spent the lab. Do not skip the quiz to extend the lab.
+**[1:50]** [Session 7 quiz](../../quizzes/session-07-quiz.md). Ten items, ten minutes. It is already written. Do not replace it with questions you invent in the room. Review only the items several people missed. If the review runs long, you already spent the lab. Do not skip the quiz to extend the lab.
 
 After class, each student completes the module on Learn, including the module assessment. Do not project Microsoft's assessment items.
 
