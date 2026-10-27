@@ -1,5 +1,7 @@
 # Session 9 instructor notes — Governance and Compliance
 
+**Speak-from script:** [session-09/instructor-guide.md](session-09/instructor-guide.md)
+
 **Objectives:** 3.2.1, 3.2.2, 3.2.3
 **Also practiced:** 3.1.4 (tags, inside the project)
 **Slides:** [session-09-slides.md](session-09-slides.md)

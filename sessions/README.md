@@ -32,6 +32,7 @@ Microsoft Learn module in Microsoft's unit order and fits the session's two-hour
 | 5 Azure Networking | [session-05/instructor-guide.md](session-05/instructor-guide.md) |
 | 7 Identity, access, and security | [session-07/instructor-guide.md](session-07/instructor-guide.md) |
 | 8 Cost management | [session-08/instructor-guide.md](session-08/instructor-guide.md) |
+| 9 Governance and compliance | [session-09/instructor-guide.md](session-09/instructor-guide.md) |
 
 ## How a slide heading works
 
