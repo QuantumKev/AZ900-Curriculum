@@ -33,6 +33,8 @@ Microsoft Learn module in Microsoft's unit order and fits the session's two-hour
 | 7 Identity, access, and security | [session-07/instructor-guide.md](session-07/instructor-guide.md) |
 | 8 Cost management | [session-08/instructor-guide.md](session-08/instructor-guide.md) |
 | 9 Governance and compliance | [session-09/instructor-guide.md](session-09/instructor-guide.md) |
+| 10 Managing and deploying resources | [session-10/instructor-guide.md](session-10/instructor-guide.md) |
+| 11 Monitoring and cumulative review | [session-11/instructor-guide.md](session-11/instructor-guide.md) |
 
 ## How a slide heading works
 

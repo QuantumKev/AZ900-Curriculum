@@ -1,5 +1,7 @@
 # Session 10 instructor notes — Managing and Deploying Azure Resources
 
+**Speak-from script:** [session-10/instructor-guide.md](session-10/instructor-guide.md). If this run of show and the script disagree, teach the script. The live module order is tools, then Azure Arc, then Resource Manager.
+
 **Objectives:** 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.5
 **Slides:** [session-10-slides.md](session-10-slides.md)
 **Lab:** [../labs/session-10-lab.md](../labs/session-10-lab.md)

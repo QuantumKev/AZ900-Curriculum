@@ -1,5 +1,7 @@
 # Session 11 instructor notes — Monitoring and Cumulative Review
 
+**Speak-from script:** [session-11/instructor-guide.md](session-11/instructor-guide.md)
+
 **Objectives taught:** 3.4.1, 3.4.2, 3.4.3
 **Slides:** [session-11-slides.md](session-11-slides.md)
 **Lab:** [../labs/session-11-lab.md](../labs/session-11-lab.md)
@@ -20,7 +22,7 @@ There is no separate warm-up. Teaching starts immediately. The cumulative review
 
 ## Teach A
 
-Advisor categories: cost, security, reliability, operational excellence, performance. If the portal shows an extra category the week you teach, add it and do not insist the slide is exhaustive. **NEEDS VERIFICATION** against the Advisor blade that week. The behavior to teach does not change: recommendations, grouped, not auto-applied.
+Advisor categories, confirmed on the module unit 29 October 2026: Reliability, Security, Performance, Operational Excellence, and Cost. If the portal shows an extra category the week you teach, add it and do not insist the slide is exhaustive. The behavior to teach does not change: recommendations, grouped, not auto-applied.
 
 Service Health: issues, planned maintenance, health advisories, scoped to your services. Resource Health: one resource. Public Azure status: the world. Learners mix these constantly. Use three questions:
 
